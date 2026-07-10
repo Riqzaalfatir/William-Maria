@@ -34,17 +34,17 @@ const Rsvp = () => {
     <>
       <section className="bg-[#F4F4F5]">
         <div className="pt-[100px] pb-[100px]">
-          <h1 className="font-averne text-[32px] text-[#51483F] flex justify-center">
+          <h1 className="font-averne text-[8.21vw] text-[#51483F] flex justify-center">
             RSVP
           </h1>
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <p className="pt-[18px] font-athelas font-bold italic text-[12px] text-[#51483F]">
+            <p className="pt-[6px] font-athelas font-bold italic text-[3.08vw] text-[#51483F]">
               Mr./Mrs./Ms.
             </p>
-            <p className="pt-[6px] font-athelas font-bold text-[16px] text-[#51483F]">
+            <p className="pt-[6px] font-athelas font-bold text-[4.10vw] text-[#51483F]  break-words max-w-[90%]">
               NAMA & PARTNER
             </p>
-            <p className="pt-[18px] font-athelas italic text-[12px] text-[#51483F] leading-[20px]">
+            <p className="pt-[18px] font-athelas italic text-[3.08vw] text-[#51483F] leading-[3.85vw]">
               Please confirm your attendance before <br />
               <span className="font-bold">Sunday, 16 August 2026</span>
             </p>
@@ -54,7 +54,7 @@ const Rsvp = () => {
                 onClick={() =>
                   setPilihan(pilihan === "hadir" ? null : "hadir")
                 }
-                className={`h-[20px] w-[74px] flex items-center justify-center font-athelas text-[12px] rounded-[5px] transition-colors duration-200 ${
+                className={`h-[5.13vw] w-[18.97vw] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] transition-colors duration-200 ${
                   pilihan === "hadir"
                     ? "bg-[#878787] text-white"
                     : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
@@ -67,7 +67,7 @@ const Rsvp = () => {
                 onClick={() =>
                   setPilihan(pilihan === "maybe" ? null : "maybe")
                 }
-                className={`h-[20px] w-[74px] flex items-center justify-center font-athelas text-[12px] rounded-[5px] transition-colors duration-200 ${
+                className={`h-[5.13vw] w-[18.97vw] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] transition-colors duration-200 ${
                   pilihan === "maybe"
                     ? "bg-[#878787] text-white"
                     : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
@@ -80,7 +80,7 @@ const Rsvp = () => {
                 onClick={() =>
                   setPilihan(pilihan === "tidak_hadir" ? null : "tidak_hadir")
                 }
-                className={`h-[20px] w-[135px] flex items-center justify-center font-athelas text-[12px] rounded-[5px] transition-colors duration-200 ${
+                className={`h-[5.13vw] w-[34.62vw] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] transition-colors duration-200 ${
                   pilihan === "tidak_hadir"
                     ? "bg-[#878787] text-white"
                     : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
@@ -90,18 +90,18 @@ const Rsvp = () => {
               </button>
             </div>
 
-            <p className="pt-[43px] font-athelas text-[12px] text-[#51483F]">
+            <p className="pt-[43px] font-athelas text-[3.08vw] text-[#51483F]">
               {pilihan === "tidak_hadir" ? "ARE YOU SURE?" : "Confirm your selection?"}
             </p>
 
             <button
               onClick={handleConfirm}
-              className="h-[20px] w-[149px] bg-[#878787] hover:bg-[#191A2A] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px] mt-[13px] transition-colors duration-200"
+              className="h-[5.13vw] w-[38.21vw] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] mt-[17px]"
             >
               CONFIRM
             </button>
 
-            <p className="pt-[24px] font-athelas italic text-[10px] text-[#51483F]">
+            <p className="pt-[24px] font-athelas italic text-[2.56vw] text-[#51483F]">
               having trouble with RSVP?
             </p>
 
@@ -109,14 +109,14 @@ const Rsvp = () => {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[24px] w-[149px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px] gap-[5px] mt-[20px] transition-colors duration-200"
+              className="h-[6.15vw] w-[38.21vw] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[5px] mt-[20px] transition-colors duration-200"
             >
               <Image
                 src="/images/rsvp/Wa.png"
                 alt="Logo Wa"
                 width={550}
                 height={550}
-                className="object-contain w-[13px] h-[13px]"
+                className="object-contain w-[3.33vw] h-[3.33vw]"
               />
               CHAT SUPPORT
             </a>
@@ -137,7 +137,6 @@ const Rsvp = () => {
 };
 
 export default Rsvp;
-
 
 
 

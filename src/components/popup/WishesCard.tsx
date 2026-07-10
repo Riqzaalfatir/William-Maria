@@ -55,7 +55,7 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
             <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#51483F]/10 rounded-full" />
           </div>
 
-          <h3 className="text-[20px] font-athelas font-bold text-[#51483F] mb-1 tracking-tight uppercase">
+          <h3 className="text-[20px] font-athelas font-bold text-[#51483F] mb-1 tracking-tight uppercase break-words max-w-[85%]">
             {data.nama}
           </h3>
 
@@ -66,7 +66,7 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
           </p>
 
           {/* Pesan */}
-          <p className="text-[13px] font-athelas italic leading-[1.8] text-[#51483F]/85 line-clamp-6 text-center mb-7">
+          <p className="text-[13px] font-athelas italic leading-[1.8] text-[#51483F]/85 line-clamp-6 text-center mb-7 break-words max-w-[85%]">
             {data.pesan}
           </p>
 

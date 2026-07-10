@@ -100,6 +100,15 @@ export const NOTIF_CONFIG: Record<string, NotifConfigItem> = {
       "Some session selections are still missing. Please select at least one session to attend.",
     buttons: [{ label: "Close", variant: "outline", action: "close" }],
   },
+  rsvp_confirmed_maybe: {
+    icon: "✓",
+    title: "RSVP CONFIRMED",
+    messageid:
+      "Konfirmasi kehadiran Anda (mungkin hadir) telah kami terima. Terima kasih atas respons Anda.",
+    messageen:
+      "Your response (maybe attending) has been confirmed. Thank you for your response, we appreciate it.",
+    buttons: [{ label: "Close", variant: "outline", action: "close" }],
+  },
   confirm_rsvp: {
     icon: "?",
     title: "CONFIRM RSVP",
