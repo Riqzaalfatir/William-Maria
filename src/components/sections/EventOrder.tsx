@@ -31,7 +31,7 @@ const EventOrder = () => {
             <p className="pt-[1.79vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] italic">
               at 9.00 AM
             </p>
-            <h2 className="pt-[3.08vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
+            <h2 className="pt-[2.5vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
             </h2>
             <p className="pt-[4.62vw] lg:pt-[65px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
