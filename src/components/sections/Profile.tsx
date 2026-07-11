@@ -34,7 +34,7 @@ const Profile = () => {
           <p className="pt-[5.5vw] lg:pt-[40px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
             Cordially invite you to celebrate the wedding reception of
           </p>
-          <div className="pt-[2vw] lg:pt-[30px]  flex flex-col items-center text-center justify-center leading-none">
+          <div className="pt-[2vw] lg:pt-[33px]  flex flex-col items-center text-center justify-center leading-none">
             <Image
               src="/images/profile/William.webp"
               alt="William"
@@ -42,7 +42,7 @@ const Profile = () => {
               height={92}
               className="h-auto w-[63.33vw] lg:w-[291px]"
             />
-            <h3 className="-mt-[2.82vw]  lg:-mt-[17px] lg:pl-[22px] font-averne text-[4.62vw] lg:text-[24px] text-[#50473F]">
+            <h3 className="-mt-[2.82vw]  lg:-mt-[17px] -ml-[4px] lg:-ml-[0px] lg:pl-[22px] font-averne font-medium text-[4.62vw] lg:text-[24px] text-[#50473F]">
               CHRISTIAN TANUDJAJA
             </h3>
             <Image

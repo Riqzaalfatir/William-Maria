@@ -16,7 +16,7 @@ const Hero = () => {
           src="/images/hero/Pengantin-Dekstop.webp"
           alt="Jusuf & Evelyn"
           fill
-          className="object-cover object-[90%_27%] hidden lg:block"
+          className="object-cover object-[90%_17%] hidden lg:block"
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-start pt-[20.77vw] lg:pt-[7.5%] text-center z-10">

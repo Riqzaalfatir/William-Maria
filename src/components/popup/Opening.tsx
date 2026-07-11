@@ -68,7 +68,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             initial={{ opacity: 1, scale: 1, y: 0 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit="exit"
-            className="relative bg-[#F9FBFA] rounded-xl md:rounded-2xl overflow-hidden w-[290px] md:w-[416px] shadow-xl flex flex-col z-[100] [box-shadow:0px_8px_11.6px_0px_rgba(0,0,0,0.54)]"
+            className="relative rounded-xl md:rounded-2xl overflow-hidden w-[290px] md:w-[416px] shadow-xl flex flex-col z-[100] [box-shadow:0px_8px_11.6px_0px_rgba(0,0,0,0.54)] bg-black"
           >
             {/* FOTO */}
             <div className="relative w-full h-[188px] md:h-[220px] overflow-hidden z-10 lg:hidden">
@@ -76,7 +76,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 src="/images/opening/OpeningMobile.webp"
                 alt="prewed"
                 fill
-                className="object-cover -mt-1"
+                className="object-cover"
               />
             </div>
 
@@ -90,8 +90,9 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             </div>
 
             {/* KONTEN TEXT */}
-            <div className=" flex flex-col items-center text-center px-4 pt-[20px] mb-[33px] lg:pt-[34px] lg:mb-[33px] flex-1 leading-none">
-              <p className="text-[12px] lg:text-[14px] text-[#717071] font-athelas tracking-widest">
+            {/* KONTEN TEXT */}
+            <div className="bg-[#F9FBFA] flex flex-col items-center text-center px-4 pt-[20px] lg:pt-[27px] flex-1 leading-none">
+              <p className="text-[12px] lg:text-[14px] text-[#717071] font-athelas tracking-wide">
                 THE WEDDING OF
               </p>
               <Image
@@ -99,26 +100,60 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 alt="Provite Logo"
                 width={450}
                 height={450}
-                className="w-[215px] mt-[7px]"
+                className="w-[215px] lg:w-[243px] mt-[7px] lg:mt-[6px]"
               />
-              <p className="text-[10px] lg:text-[14px] text-[#717071] font-athelas pt-[6px] md:pt-[30px]">
-                Dear
+              <p className="text-[10px] lg:text-[14px] text-[#717071] font-athelas pt-[6px] lg:pt-[14px] md:pt-[30px]">
+                Dear Mr. /Mrs. / Ms.
               </p>
               <p className="text-[12px] lg:text-[18px] text-[#717071] font-athelas pt-[14px] md:pt-[17px] break-words max-w-full">
                 {namaTamu}
               </p>
-              <p className="text-[8px] lg:text-[12px] text-[#717071] font-athelas leading-[13px] pt-[16px] md:pt-[23px] tracking-wide">
+              <p className="text-[8px] lg:text-[12px] text-[#717071] font-athelas leading-[13px] lg:leading-[16px] pt-[16px] md:pt-[23px] tracking-wide">
                 We sincerely apologize
                 <br />
                 for any misspelling of names or titles.
               </p>
+              <div className="mb-[33px] lg:mb-[39px]">
+                <button
+                  onClick={handleOpen}
+                  className="bg-[#878787] flex items-center justify-center text-[#FFFFFF] w-[184px] h-[33px] md:w-[220px] md:h-[40px] rounded-[5px] uppercase font-athelas text-[12px] lg:text-[18px] mt-[23px] md:mt-[15px]"
+                >
+                  <span>VIEW Invitation</span>
+                </button>
+              </div>
+            </div>
+
+            {/* <div className="bg-[#F9FBFA] flex flex-col items-center text-center px-4 pt-[20px] lg:pt-[27px] lg:mb-flex-1 leading-none">
+              <p className="text-[12px] lg:text-[14px] text-[#717071] font-athelas tracking-wide">
+                THE WEDDING OF
+              </p>
+              <Image
+                src="/images/opening/William-Maria.webp"
+                alt="Provite Logo"
+                width={450}
+                height={450}
+                className="w-[215px] lg:w-[243px] mt-[7px] lg:mt-[6px]"
+              />
+              <p className="text-[10px] lg:text-[14px] text-[#717071] font-athelas pt-[6px] lg:pt-[14px] md:pt-[30px]">
+                Dear Mr. /Mrs. / Ms.
+              </p>
+              <p className="text-[12px] lg:text-[18px] text-[#717071] font-athelas pt-[14px] md:pt-[17px] break-words max-w-full">
+                {namaTamu}
+              </p>
+              <p className="text-[8px] lg:text-[12px] text-[#717071] font-athelas leading-[13px] lg:leading-[16px] pt-[16px] md:pt-[23px] tracking-wide">
+                We sincerely apologize
+                <br />
+                for any misspelling of names or titles.
+              </p>
+              <div className="mb-[33px] lg:mb-[39px]">
               <button
                 onClick={handleOpen}
-                className="bg-[#878787] flex items-center justify-center text-[#FFFFFF] w-[184px] h-[33px] md:w-[220px] md:h-[40px] rounded-[5px] uppercase font-athelas text-[12px] lg:text-[18px] mt-[17px] md:mt-[15px]"
+                className="bg-[#878787] flex items-center justify-center text-[#FFFFFF] w-[184px] h-[33px] md:w-[220px] md:h-[40px] rounded-[5px] uppercase font-athelas text-[12px] lg:text-[18px] mt-[23px] md:mt-[15px]"
               >
                 <span>VIEW Invitation</span>
               </button>
-            </div>
+              </div>
+            </div> */}
           </motion.div>
         </div>
       )}
