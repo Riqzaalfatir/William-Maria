@@ -55,44 +55,44 @@ const Wishes = () => {
     <>
       <section
         id="wishes"
-        className="w-full flex flex-col items-center pt-[104px] pb-[73px] lg:pt-[236px] lg:pb-[35px] leading-none"
+        className="w-full flex flex-col items-center pt-[104px] pb-[73px] lg:pt-[124px] lg:pb-[25px] leading-none"
       >
-        <h2 className="font-averne text-[8.21vw] text-white">
+        <h2 className="font-averne text-[8.21vw] lg:text-[48px] text-white">
           YOUR WISHES
         </h2>
 
-        <div className="w-full max-w-[72.82vw] lg:max-w-[583px] mx-auto mt-[38px] lg:mt-[65px]">
+        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[38px] lg:mt-[31px]">
           <div className="flex flex-col gap-[20px]">
             <input
               type="text"
               value={nama}
               placeholder="Desy (Tester)"
               onChange={(e) => setNama(e.target.value)}
-              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[18px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[23px] h-[8.46vw] lg:h-[40px] rounded-[5px] outline-none placeholder:text-[#51483F]/50"
+              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[15px] h-[8.46vw] lg:h-[40px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
 
             <textarea
               value={pesan}
               onChange={(e) => setPesan(e.target.value)}
-              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[18px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[23px] py-[5px] lg:py-[10px] h-[28.97vw] lg:h-[261px] rounded-[5px] outline-none placeholder:text-[#51483F]/50"
+              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[15px] py-[5px] lg:py-[10px] h-[28.97vw] lg:h-[140px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
 
             <button
               onClick={handleSubmit}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-athelas uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#FFFFFF] tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#FFFFFF] tracking-widest"
             >
               <Image
                 src="/images/wishes/Panah.png"
                 alt="Kirim"
                 width={20}
                 height={20}
-                className="object-contain w-[4.62vw] lg:w-[25px] transition-all duration-200"
+                className="object-contain w-[4.62vw] lg:w-[20px] transition-all duration-200"
               />
               Send
             </button>
 
             <div
-              className={`w-full rounded-[5px] h-[81.79vw] lg:h-[519px] overflow-y-auto scrollbar-hide ${
+              className={`w-full rounded-[5px] lg:rounded-[7px] h-[81.79vw] lg:h-[380px] overflow-y-auto scrollbar-hide ${
                 showAll ? "bg-transparent rounded-none" : "bg-[#535353]"
               }`}
             >
@@ -100,14 +100,14 @@ const Wishes = () => {
                 <div>
                   <div className="sticky top-0 w-full h-[3.08vw] lg:h-[15px] bg-[#535353] z-10" />
 
-                  <div className="px-[10px] lg:px-[23px]">
+                  <div className="px-[10px] lg:px-[26px]">
                     {pesanList.map((item, index, array) => (
                       <div key={item.id}>
-                        <p className="text-white font-athelas text-[3.08vw] mb-[10px] lg:text-[18px] lg:mb-[16px]">
+                        <p className="text-white font-athelas text-[3.08vw] mb-[10px] lg:text-[14.5px] lg:mb-[12px]">
                           {item.nama}
                         </p>
 
-                        <p className="text-white font-athelas text-[3.08vw] lg:text-[18px] tracking-wide mb-[13px] lg:mb-[17px] break-words leading-[3.33vw] lg:leading-[22px]">
+                        <p className="text-white font-athelas text-[3.08vw] lg:text-[14.5px] tracking-wide mb-[13px] lg:mb-[16px] break-words leading-[3.33vw] lg:leading-[18.24px]">
                           {item.pesan}
                         </p>
 
@@ -186,14 +186,14 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[18px] font-athelas uppercase flex items-center justify-center gap-1.5 text-white tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 text-white tracking-widest"
             >
               <Image
                 src="/images/wishes/Pesan.png"
                 alt="Pesan"
                 width={20}
                 height={20}
-                className="object-cover w-[5.13vw] lg:w-[25px] group-hover:invert transition-all duration-200"
+                className="object-cover w-[5.13vw] lg:w-[20px] group-hover:invert transition-all duration-200"
               />
               {showAll ? "BACK" : "VIEW ALL MESSAGES"}
             </button>
@@ -201,40 +201,40 @@ const Wishes = () => {
         </div>
         {showPopup && (
           <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-[24px]">
-            <div className="relative overflow-hidden rounded-[28px] border border-[#51483F]/20 bg-[#F9FBFA] shadow-lg w-full max-w-[84.62vw]">
-              <div className="absolute top-0 left-0 w-full h-[1.54vw] bg-[#51483F]" />
+            <div className="relative overflow-hidden rounded-[28px] border border-[#51483F]/20 bg-[#F9FBFA] shadow-lg w-full max-w-[84.62vw] lg:max-w-[420px]">
+              <div className="absolute top-0 left-0 w-full h-[1.54vw] lg:h-[8px] bg-[#51483F]" />
 
-              <div className="px-[28px] pt-[36px] pb-[28px] flex flex-col items-center text-center">
-                <div className="w-[18.46vw] h-[18.46vw] rounded-full bg-[#51483F]/10 border border-[#51483F]/15 flex items-center justify-center mb-[20px]">
+              <div className="px-[28px] lg:px-[40px] pt-[36px] lg:pt-[48px] pb-[28px] lg:pb-[40px] flex flex-col items-center text-center">
+                <div className="w-[18.46vw] h-[18.46vw] lg:w-[96px] lg:h-[96px] rounded-full bg-[#51483F]/10 border border-[#51483F]/15 flex items-center justify-center mb-[20px] lg:mb-[28px]">
                   <Image
                     src="/images/wishes/Pesan.svg"
                     alt="Success"
                     width={34}
                     height={34}
-                    className="object-contain w-[8.72vw] h-[8.72vw]"
+                    className="object-contain w-[8.72vw] h-[8.72vw] lg:w-[44px] lg:h-[44px]"
                   />
                 </div>
 
-                <h3 className="font-duende text-[8.21vw] text-[#51483F]">
+                <h3 className="font-duende text-[8.21vw] lg:text-[40px] text-[#51483F]">
                   Thank You
                 </h3>
 
-                <div className="w-[17.95vw] h-[1px] bg-[#51483F]/30 my-[16px]" />
+                <div className="w-[17.95vw] lg:w-[90px] h-[1px] bg-[#51483F]/30 my-[16px] lg:my-[22px]" />
 
-                <p className="font-athelas italic text-[3.08vw] leading-[5.64vw] text-[#51483F]/85 max-w-[61.54vw]">
+                <p className="font-athelas italic text-[3.08vw] lg:text-[16px] leading-[5.64vw] lg:leading-[26px] text-[#51483F]/85 max-w-[61.54vw] lg:max-w-[320px]">
                   Your wishes and prayers mean so much to us. Thank you for
                   sharing your kind words on our special day.
                 </p>
 
                 <button
                   onClick={() => setShowPopup(false)}
-                  className="mt-[28px] bg-[#51483F] hover:bg-[#51483F]/85 active:scale-95 transition-all duration-300 text-white font-athelas uppercase text-[2.82vw] tracking-[0.13vw] px-[32px] h-[9.74vw] rounded-full"
+                  className="mt-[28px] lg:mt-[36px] bg-[#51483F] hover:bg-[#51483F]/85 active:scale-95 transition-all duration-300 text-white font-athelas uppercase text-[2.82vw] lg:text-[14px] tracking-[0.13vw] lg:tracking-[0.6px] px-[32px] lg:px-[40px] h-[9.74vw] lg:h-[48px] rounded-full"
                 >
                   Close
                 </button>
               </div>
 
-              <div className="absolute bottom-0 left-0 w-full h-[1.28vw] bg-[#51483F]" />
+              <div className="absolute bottom-0 left-0 w-full h-[1.28vw] lg:h-[6px] bg-[#51483F]" />
             </div>
           </div>
         )}
@@ -253,9 +253,6 @@ const Wishes = () => {
 };
 
 export default Wishes;
-
-
-
 
 // SEBELUM DI KE VW KAN
 // "use client";
@@ -317,7 +314,6 @@ export default Wishes;
 //         id="wishes"
 //         className="w-full flex flex-col items-center pt-[104px] pb-[73px] lg:pt-[236px] lg:pb-[35px] leading-none"
 //       >
-       
 
 //         <h2 className="font-averne text-[32px] text-white">
 //           YOUR WISHES

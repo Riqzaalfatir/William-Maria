@@ -17,6 +17,8 @@ const images = [
   "/images/gallery/Pengantin4.webp",
   "/images/gallery/Pengantin5.webp",
   "/images/gallery/Pengantin6.webp",
+  "/images/gallery/Pengantin7.webp",
+  "/images/gallery/Pengantin8.webp",
 ];
 
 const Gallery = () => {
@@ -39,12 +41,14 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="bg-[#F4F4F5] w-full flex justify-center py-[25.64vw]">
-        <div className="grid grid-cols-2 gap-[3.46vw]">
+      <section className="bg[#F9FBFA] w-full flex justify-center py-[25.64vw] lg:py-[120px]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[3.46vw] lg:gap-[20px]">
           {images.map((src, i) => (
             <div
               key={i}
-              className="relative w-[41.79vw] h-[56.41vw] cursor-pointer"
+              className={`relative w-[41.79vw] h-[56.41vw] lg:w-[273px] lg:h-[360px] cursor-pointer ${
+                i >= 6 ? "hidden lg:block" : ""
+              }`}
               onClick={() => handleImageClick(i)}
             >
               <Image

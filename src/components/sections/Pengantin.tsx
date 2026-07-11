@@ -4,10 +4,10 @@ const Pengantin = () => {
   return (
     <section
       id="gallery"
-      className="relative w-full h-[360px] lg:h-[759px] flex"
+      className="relative w-full h-[360px] lg:h-[942px] flex"
     >
       <img
-        src="/images/pengantin/Pengantin3.webp"
+        src="/images/pengantin/PengantinD.webp"
         alt="Nicholas & Clara"
         className="w-full h-full object-cover pointer-events-none"
       />

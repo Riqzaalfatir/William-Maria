@@ -3,35 +3,41 @@ import Image from "next/image";
 
 const EventOrder = () => {
   return (
-    <section id="eventorder" className="bg-[#F4F4F5]">
-      <div className="pt-[20.51vw]">
-        <div className="relative left-1/2 -translate-x-1/2 w-[28.46vw] h-auto">
+    <section id="eventorder" className="bg[#F9FBFA]">
+      <div className="pt-[20.51vw] lg:pt-[116px]">
+        {/* <div className="relative left-1/2 -translate-x-1/2 w-[28.46vw] lg:w-[189px] h-auto">
           <Image
-            src="/images/eventorder/Logo.svg"
+            src="/images/eventorder/LogoD.webp"
             alt="Provite Logo"
-            width={250}
-            height={250}
+            width={450}
+            height={450}
             className="w-full"
+          />
+        </div> */}
+        <div className="relative left-1/2 -translate-x-1/2 w-[28.46vw] lg:w-[189px] h-auto">
+          <img
+            src="/images/eventorder/LogoD.webp"
+            alt="Provite Logo"
+            className="w-full h-auto"
           />
         </div>
 
-        <div className="pt-[10.51vw] flex flex-col items-center justify-center leading-none">
+        <div className="pt-[10.51vw] lg:pt-[45px] flex flex-col items-center justify-center leading-none">
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] text-[#51483F] leading-[7.18vw]">
-              HOLY <br />
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none">
+              HOLY <br className="lg:hidden" />
               MATRIMONY
             </h1>
-            <p className="pt-[1.79vw] font-athelas text-[3.59vw] text-[#717071]">
-              <span className="italic">at</span>
-              <span className="font-urw">9.00</span> AM
+            <p className="pt-[1.79vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] italic">
+              at 9.00 AM
             </p>
-            <h2 className="pt-[3.08vw] font-duende text-[10.77vw] text-[#51483F]">
+            <h2 className="pt-[3.08vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
             </h2>
-            <p className="pt-[4.62vw] font-athelas text-[3.59vw] text-[#717071]">
+            <p className="pt-[4.62vw] lg:pt-[65px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
               DRESS CODE
             </p>
-            <p className="pt-[0.26vw] font-athelas italic text-[3.59vw] text-[#717071] leading-[4.87vw]">
+            <p className="pt-[0.26vw] lg:pt-[22px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
               Neutral Colors <br />( No Batik )
             </p>
             <Image
@@ -39,27 +45,33 @@ const EventOrder = () => {
               alt="William"
               width={250}
               height={92}
-              className="mt-[4.87vw] h-auto w-[58.97vw]"
+              className="mt-[4.87vw] h-auto w-[58.97vw] lg:hidden"
             />
-            <p className="pt-[3.59vw] font-athelas italic text-[3.08vw] text-[#717071]">
+            <Image
+              src="/images/eventorder/DresscodeD.png"
+              alt="William"
+              width={250}
+              height={92}
+              className="mt-[20px] h-auto w-[308px] hidden lg:block"
+            />
+            <p className="pt-[3.59vw] lg:pt-[22px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
               don’t forget your sunnies!
             </p>
           </div>
 
-          <div className="pt-[15.90vw] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] text-[#51483F] leading-[7.18vw] tracking-wide">
-              DINNER <br />
+          <div className="pt-[15.90vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide">
+              DINNER <br className="lg:hidden" />
               RECEPTION
             </h1>
-            <p className="pt-[1.79vw] font-athelas text-[3.59vw] text-[#717071]">
-              <span className="italic">at</span>
-              <span className="font-urw">6.00</span> PM
+            <p className="pt-[1.79vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] italic text-[#717071]">
+              at 6.00 PM
             </p>
-            <p className="pt-[2.56vw] font-athelas text-[3.59vw] text-[#717071]">
+            {/* <p className="pt-[2.56vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[64px] text-[#717071]">
               GRAND BALLROOM
-            </p>
-            <h2 className="pt-[0.51vw] font-duende text-[10.26vw] text-[#51483F] leading-[7.95vw] tracking-wide">
-              Intercontinental Hotel <br />
+            </p> */}
+            <h2 className="pt-[0.51vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none tracking-wide">
+              Intercontinental Hotel <br className="lg:hidden" />
               Bandung
             </h2>
 
@@ -67,38 +79,40 @@ const EventOrder = () => {
               href="https://maps.app.goo.gl/itNvPF8tGYZR4Whq9"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[6.15vw] w-[45.64vw] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-averne text-[2.31vw] rounded-[5px] gap-[1.28vw] mt-[6.41vw]"
+              className="h-[6.15vw] w-[45.64vw] lg:h-[40px] lg:w-[268px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center text-[2.31vw] lg:text-[18px] rounded-[5px] lg:rounded-[7px] italic font-athelas gap-[1.28vw] lg:gap-[8px] mt-[6.41vw] lg:mt-[24px]"
             >
               <Image
                 src="/images/eventorder/Peta.webp"
                 alt="Logo Wa"
                 width={550}
                 height={550}
-                className="object-contain w-[5.13vw] h-[4.62vw]"
+                className="object-contain w-[5.13vw] h-[4.62vw] lg:w-[29px] lg:h-[26px]"
               />
               NAVIGATE TO LOCATION
             </a>
           </div>
 
-          <div className="pt-[11.54vw] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] text-[#51483F]">
+          <div className="pt-[11.54vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F]">
               DRESS CODE
             </h1>
-            <p className="pt-[2.82vw] font-athelas italic text-[3.08vw] text-[#717071] leading-[3.85vw]">
+            <p className="pt-[2.82vw] lg:pt-[27px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
               We kindly encourage our guest to dress <br />
               as follows on our special day
             </p>
-            <div className="pt-[7.18vw] flex flex-col items-center justify-center leading-none">
-              <p className="font-athelas text-[4.62vw] text-[#717071]">
+            <div className="pt-[7.18vw] lg:pt-[39px] flex flex-col items-center justify-center leading-none">
+              <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 GENTLEMEN
               </p>
-              <p className="pt-[0.77vw] font-athelas italic text-[3.59vw] text-[#717071] leading-[4.62vw]">
+              <p className="pt-[0.77vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[20px]">
                 Black Suits & Tie <br />( No Batik )
               </p>
             </div>
-            <div className="pt-[2.82vw] flex flex-col items-center justify-center leading-none">
-              <p className="font-athelas text-[4.62vw] text-[#717071]">WOMAN</p>
-              <p className="pt-[0.77vw] font-athelas italic text-[3.59vw] text-[#717071] leading-[4.87vw]">
+            <div className="pt-[2.82vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
+              <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
+                WOMAN
+              </p>
+              <p className="pt-[0.77vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
                 Formal Long Dresses <br />
                 in Shades of Navy or Black
               </p>
@@ -108,7 +122,14 @@ const EventOrder = () => {
               alt="William"
               width={250}
               height={92}
-              className="mt-[5.13vw] h-auto w-[23.59vw]"
+              className="mt-[5.13vw] h-auto w-[23.59vw] lg:hidden"
+            />
+            <Image
+              src="/images/eventorder/DCHBD.png"
+              alt="William"
+              width={250}
+              height={92}
+              className="mt-[19px] h-auto w-[172px] hidden lg:block"
             />
           </div>
         </div>
@@ -118,7 +139,6 @@ const EventOrder = () => {
 };
 
 export default EventOrder;
-
 
 // SEBELUM DI VW KAN
 // import React from "react";
