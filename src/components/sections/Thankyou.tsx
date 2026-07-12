@@ -4,7 +4,7 @@ import Image from "next/image";
 const Thankyou = () => {
   return (
     <section className="">
-      <div className="pt-[656px] pb-[31px] lg:pt-[673px] lg:pb-[65px]">
+      <div className="pt-[656px] pb-[31px] lg:pt-[673px] lg:pb-[50px]">
         <div className="flex flex-col items-center justify-center leading-none">
           <h1 className="font-duende text-[16.41vw] lg:text-[96px] text-white">
             Thank You

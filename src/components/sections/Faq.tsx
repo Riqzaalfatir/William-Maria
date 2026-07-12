@@ -14,7 +14,7 @@ const Faq = () => {
   return (
     <>
       <section className="w-full  bg[#F9FBFA]">
-        <div className="max-w-[311px] lg:max-w-[720px] mx-auto pb-[93px] lg:py-28">
+        <div className="max-w-[311px] lg:max-w-[565px] mx-auto pb-[93px] lg:pt-[40px] lg:pb-[120px] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]">
           <motion.h2
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ const Faq = () => {
               duration: 1.5,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="uppercase text-center text-[#51483F] font-averne text-[32px] md:text-[46px] lg:text-[52px] mb-[9px] lg:mb-[24px]"
+            className="uppercase text-center text-[#51483F] font-averne text-[32px] md:text-[46px] lg:text-[48px] mb-[9px] lg:-mb-[20px]"
           >
             FAQ
           </motion.h2>
@@ -31,7 +31,7 @@ const Faq = () => {
           <div className=" lg:max-h-none  lg:overflow-visible">
             {/* RENDER FAQ */}
             {faqData.map((section, sIndex) => (
-              <div key={sIndex} className="mt-[15px] lg:mt-[36px]">
+              <div key={sIndex} className="mt-[15px] lg:mt-[32px]">
                 {/* JUDUL FAQ */}
                 <motion.h3
                   initial={{ opacity: 0, y: 80 }}
@@ -42,7 +42,7 @@ const Faq = () => {
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.2,
                   }}
-                  className="text-center text-[#51483F] font-athelas text-[16px] md:text-[22px] lg:text-[26px] uppercase"
+                  className="text-center text-[#51483F] font-athelas text-[16px] md:text-[22px] lg:text-[24px] uppercase tracking-wide"
                 >
                   {section.judul}
                 </motion.h3>
@@ -56,7 +56,7 @@ const Faq = () => {
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.3,
                   }}
-                  className="border-t border-t-[1px] border-[#707071] mt-[12px] lg:mt-[20px]"
+                  className="border-t border-t-[1px] border-[#707071] mt-[12px] lg:mt-[35px]"
                 >
                   {section.items.map((item, iIndex) => {
                     const key = `${sIndex}-${iIndex}`;
@@ -79,11 +79,11 @@ const Faq = () => {
                           onClick={() => toggle(key)}
                           className="w-full flex justify-between items-center py-[2px] lg:py-[18px] text-left text-[#51483F]"
                         >
-                          <span className="text-[12px] md:text-[18px] lg:text-[19px] text-[#51483F] font-athelas pr-4">
+                          <span className="text-[12px] md:text-[18px] lg:text-[18px] text-[#51483F] font-athelas pr-4">
                             {item.pertanyaan}
                           </span>
 
-                          <span className="text-[24px] lg:text-[30px] font-athelas text-[#717071] shrink-0">
+                          <span className="text-[24px] lg:text-[28px] font-athelas text-[#717071] shrink-0">
                             {isOpen ? "−" : "+"}
                           </span>
                         </button>
@@ -93,7 +93,7 @@ const Faq = () => {
                             {item.jawaban.map((paragraf, pIndex) => (
                               <p
                                 key={pIndex}
-                                className="text-[12px] md:text-[17px] lg:text-[17px] font-athelas text-[#51483F] whitespace-pre-line lg:leading-relaxed"
+                                className="text-[12px] md:text-[17px] lg:text-[18px] font-athelas text-[#51483F] whitespace-pre-line lg:leading-relaxed"
                               >
                                 {paragraf}
                               </p>

@@ -13,7 +13,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[120px]">
+      <section className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[135px]">
         <div
           className="relative w-full flex items-center justify-center"
           onClick={() => setLightboxOpen(true)}
@@ -24,7 +24,15 @@ const Gallery = () => {
             width={1200}
             height={1600}
             sizes="100vw"
-            className="w-[87.18vw] h-auto object-cover"
+            className="w-[87.18vw] h-auto object-cover lg:hidden"
+          />
+          <Image
+            src="/images/gallery/PengantinD.webp"
+            alt="Gallery"
+            width={1200}
+            height={1600}
+            sizes="100vw"
+            className="w-[1098px] h-auto object-cover hidden lg:block"
           />
         </div>
       </section>

@@ -24,20 +24,22 @@ const EventOrder = () => {
 
         <div className="pt-[10.51vw] lg:pt-[45px] flex flex-col items-center justify-center leading-none">
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none"  style={{ WebkitTextStroke: "0.2px #51483F" }}>
-              HOLY <br className="lg:hidden" />
-              MATRIMONY
-            </h1>
-            <p className="pt-[2.5vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+<h1
+  className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]"
+>
+  HOLY <br className="lg:hidden" />
+  MATRIMONY
+</h1>
+            <p className="pt-[2.5vw] lg:pt-[23px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               <span className="italic">at</span> <span className="font-urw italic">9.00</span> AM
             </p>
-            <h2 className="pt-[2.2vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
+            <h2 className="pt-[2.2vw] lg:pt-[24px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
             </h2>
-            <p className="pt-[3.5vw] lg:pt-[65px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+            <p className="pt-[3.5vw] lg:pt-[19px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
               DRESS CODE
             </p>
-            <p className="pt-[0.7vw] lg:pt-[22px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
+            <p className="pt-[0.7vw] lg:pt-[5px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[23px]">
               Neutral Colors <br />( No Batik )
             </p>
             <Image
@@ -52,25 +54,25 @@ const EventOrder = () => {
               alt="William"
               width={250}
               height={92}
-              className="mt-[20px] h-auto w-[308px] hidden lg:block"
+              className="mt-[23px] h-auto w-[308px] hidden lg:block"
             />
-            <p className="pt-[3.59vw] lg:pt-[22px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
+            <p className="pt-[3.59vw] lg:pt-[20px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
               don’t forget your sunnies!
             </p>
           </div>
 
-          <div className="pt-[15.90vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide" style={{ WebkitTextStroke: "0.2px #51483F" }}>
+          <div className="pt-[15.90vw] lg:pt-[65px] flex flex-col items-center text-center justify-center leading-none">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]">
               DINNER <br className="lg:hidden" />
               RECEPTION
             </h1>
-            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+            <p className="pt-[2.5vw] lg:pt-[31px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               <span className="italic">at</span> <span className="font-urw italic">6.00</span> PM
             </p>
-            <p className="pt-[2.8vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+            <p className="pt-[2.8vw] lg:pt-[20px] font-athelas text-[3.59vw] lg:text-[14px] text-[#717071] tracking-wide">
               GRAND BALLROOM
             </p>
-            <h2 className="pt-[1.3vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
+            <h2 className="pt-[1.3vw] lg:pt-[11px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
               <span>Intercontinental</span>
               <span className="ml-[8px] lg:ml-[10px]">Hotel</span>
               <span className="block lg:inline lg:ml-[10px]">Bandung</span>
@@ -80,7 +82,7 @@ const EventOrder = () => {
               href="https://maps.app.goo.gl/itNvPF8tGYZR4Whq9"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[6.15vw] w-[45.64vw] lg:h-[40px] lg:w-[268px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center text-[2.31vw] lg:text-[18px] rounded-[5px] lg:rounded-[7px] font-averne gap-[0.7vw] lg:gap-[8px] mt-[6.41vw] lg:mt-[24px]"
+              className="h-[6.15vw] w-[45.64vw] lg:h-[31px] lg:w-[268px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center text-[2.31vw] lg:text-[18px] rounded-[5px] lg:rounded-[7px] font-averne gap-[0.7vw] lg:gap-[8px] mt-[6.41vw] lg:mt-[21px]"
             >
               <Image
                 src="/images/eventorder/Peta.webp"
@@ -93,27 +95,27 @@ const EventOrder = () => {
             </a>
           </div>
 
-          <div className="pt-[11vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F]" style={{ WebkitTextStroke: "0.2px #51483F" }} >
+          <div className="pt-[11vw] lg:pt-[68px] flex flex-col items-center text-center justify-center leading-none">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]">
               DRESS CODE
             </h1>
-            <p className="pt-[3vw] lg:pt-[27px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
+            <p className="pt-[3vw] lg:pt-[28px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
               We kindly encourage our guest to dress <br />
               as follows on our special day
             </p>
-            <div className="pt-[7.18vw] lg:pt-[39px] flex flex-col items-center justify-center leading-none">
+            <div className="pt-[7.18vw] lg:pt-[23px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 GENTLEMEN
               </p>
-              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[22px]">
+              <p className="pt-[1vw] lg:pt-[2px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[23px]">
                 Black Suits & Tie <br />( No Batik )
               </p>
             </div>
-            <div className="pt-[4vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
+            <div className="pt-[4vw] lg:pt-[15px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 WOMAN
               </p>
-              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[22px]">
+              <p className="pt-[1vw] lg:pt-[2px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[23px]">
                 Formal Long Dresses <br />
                 in Shades of Navy or Black
               </p>
@@ -130,7 +132,7 @@ const EventOrder = () => {
               alt="William"
               width={250}
               height={92}
-              className="mt-[19px] h-auto w-[172px] hidden lg:block"
+              className="mt-[23px] h-auto w-[172px] hidden lg:block"
             />
           </div>
         </div>
