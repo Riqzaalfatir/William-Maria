@@ -38,15 +38,7 @@ export const faqData: FAQSection[] = [
     judul: "GIFT",
     items: [
       {
-        pertanyaan: "Unfortunately, I can't attend.",
-        jawaban: [
-          "Your presence is the greatest gift we could ask for. However, if you'd still like to bless us with a wedding gift, please feel free to contact the Groom or Bride directly via WhatsApp or Instagram.",
-          "Groom: @william___23\nBride: @marlawrena",
-          "Thank you for celebrating with us in your own special way. We truly appreciate your love and support.",
-        ],
-      },
-      {
-        pertanyaan: "Unfortunately, I can't attend. How can I send a wedding gift?",
+        pertanyaan: "I can't attend. How can I send a wedding gift?",
         jawaban: [
           "Your presence is the greatest gift we could ask for. However, if you'd still like to bless us with a wedding gift, please feel free to contact the Groom or Bride directly via WhatsApp or Instagram.",
           "Groom: @william___23\nBride: @marlawrena",

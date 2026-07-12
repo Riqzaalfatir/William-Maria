@@ -24,12 +24,12 @@ const EventOrder = () => {
 
         <div className="pt-[10.51vw] lg:pt-[45px] flex flex-col items-center justify-center leading-none">
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none"  style={{ WebkitTextStroke: "0.2px #51483F" }}>
               HOLY <br className="lg:hidden" />
               MATRIMONY
             </h1>
-            <p className="pt-[2.5vw] italic lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
-              at <span className="font-urw">9.00</span> AM
+            <p className="pt-[2.5vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+              <span className="italic">at</span> <span className="font-urw italic">9.00</span> AM
             </p>
             <h2 className="pt-[2.2vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
@@ -60,21 +60,21 @@ const EventOrder = () => {
           </div>
 
           <div className="pt-[15.90vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide" style={{ WebkitTextStroke: "0.2px #51483F" }}>
               DINNER <br className="lg:hidden" />
               RECEPTION
             </h1>
-            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas italic text-[3.59vw] lg:text-[20px] text-[#717071]">
-              at <span className="font-urw">6.00</span> PM
+            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+              <span className="italic">at</span> <span className="font-urw italic">6.00</span> PM
             </p>
             <p className="pt-[2.8vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               GRAND BALLROOM
             </p>
-           <h2 className="pt-[1.5vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
-    <span>Intercontinental</span>
-  <span className="ml-[8px] lg:ml-[10px]">Hotel</span>
-  <span className="block lg:inline lg:ml-[10px]">Bandung</span>
-</h2>
+            <h2 className="pt-[1.3vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
+              <span>Intercontinental</span>
+              <span className="ml-[8px] lg:ml-[10px]">Hotel</span>
+              <span className="block lg:inline lg:ml-[10px]">Bandung</span>
+            </h2>
 
             <a
               href="https://maps.app.goo.gl/itNvPF8tGYZR4Whq9"
@@ -94,7 +94,7 @@ const EventOrder = () => {
           </div>
 
           <div className="pt-[11vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F]">
+            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F]" style={{ WebkitTextStroke: "0.2px #51483F" }} >
               DRESS CODE
             </h1>
             <p className="pt-[3vw] lg:pt-[27px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
@@ -109,7 +109,7 @@ const EventOrder = () => {
                 Black Suits & Tie <br />( No Batik )
               </p>
             </div>
-            <div className="pt-[3vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
+            <div className="pt-[4vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 WOMAN
               </p>

@@ -56,7 +56,7 @@ const Faq = () => {
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.3,
                   }}
-                  className="border-t border-t-[2px] border-[#707071] mt-[12px] lg:mt-[20px]"
+                  className="border-t border-t-[1px] border-[#707071] mt-[12px] lg:mt-[20px]"
                 >
                   {section.items.map((item, iIndex) => {
                     const key = `${sIndex}-${iIndex}`;
@@ -73,7 +73,7 @@ const Faq = () => {
                           delay: 0.4,
                         }}
                         key={key}
-                        className="border-[#707071] border-b-[2px]"
+                        className="border-[#707071] border-b-[1px]"
                       >
                         <button
                           onClick={() => toggle(key)}
