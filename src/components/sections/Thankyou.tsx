@@ -13,9 +13,9 @@ const Thankyou = () => {
             Having you with us on our special day would <br />
             make our celebration even more meaningful.
           </p>
-          <div className="pt-[31px] flex items-center justify-center gap-[20px]">
+          <div className="pt-[31px] lg:pt-[48px] flex items-center justify-center gap-[20px] lg:gap-[25px]">
             <div className="flex items-center justify-center gap-[4px]">
-              <p className="font-athelas text-white text-[6.89px]">
+              <p className="font-athelas text-white text-[6.89px] lg:text-[9.87px]">
                 Specially Design by
               </p>
               <Image
@@ -23,11 +23,11 @@ const Thankyou = () => {
                 alt="William"
                 width={250}
                 height={252}
-                className="mt-[0px] lg:mt-[55px] h-auto w-[44px] lg:w-[361px]"
+                className="h-auto w-[44px] lg:w-[62px]"
               />
             </div>
             <div className="flex items-center justify-center gap-[4px]">
-              <p className="font-athelas text-white text-[6.89px]">
+              <p className="font-athelas text-white text-[6.89px] lg:text-[9.87px]">
               Reservation System by
               </p>
               <Image
@@ -35,7 +35,7 @@ const Thankyou = () => {
                 alt="William"
                 width={250}
                 height={252}
-                className="mt-[4.5px] lg:mt-[55px] h-auto w-[62px] lg:w-[361px]"
+                className="mt-[4.5px] lg:mt-[5px] h-auto w-[62px] lg:w-[89px]"
               />
             </div>
           </div>

@@ -33,7 +33,7 @@ const Rsvp = () => {
   return (
     <>
       <section className="bg[#F9FBFA]">
-        <div className="pt-[23vw] pb-[24vw] lg:pt-[105px] lg:pb-[120px]">
+        <div className="pt-[23vw] pb-[24vw] lg:pt-[108px] lg:pb-[120px]">
           <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] flex justify-center">
             RSVP
           </h1>
@@ -41,7 +41,7 @@ const Rsvp = () => {
             <p className="pt-[1.3vw] lg:pt-[20px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F]">
               Mr./Mrs./Ms.
             </p>
-            <p className="pt-[1.6vw] lg:pt-[48px] font-athelas font-bold text-[4.10vw] lg:text-[18px] text-[#51483F]  break-words max-w-[90%]">
+            <p className="pt-[1.6vw] lg:pt-[44px] font-athelas font-bold text-[4.10vw] lg:text-[18px] text-[#51483F]  break-words max-w-[90%]">
               NAMA & PARTNER
             </p>
             <p className="pt-[5.13vw] lg:pt-[48px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[26px]">
@@ -55,7 +55,7 @@ const Rsvp = () => {
                 className={`h-[5.13vw] w-[18.97vw] lg:h-[40px] lg:w-[172px] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] transition-colors duration-200 ${
                   pilihan === "hadir"
                     ? "bg-[#878787] text-white"
-                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
+                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white"
                 }`}
               >
                 ATTEND
@@ -66,7 +66,7 @@ const Rsvp = () => {
                 className={`h-[5.13vw] w-[18.97vw] lg:h-[40px] lg:w-[172px] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] transition-colors duration-200 ${
                   pilihan === "maybe"
                     ? "bg-[#878787] text-white"
-                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
+                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white"
                 }`}
               >
                 MAYBE
@@ -79,7 +79,7 @@ const Rsvp = () => {
                 className={`h-[5.13vw] w-[34.62vw] lg:h-[40px] lg:w-[172px] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] transition-colors duration-200 ${
                   pilihan === "tidak_hadir"
                     ? "bg-[#878787] text-white"
-                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-[#51483F]"
+                    : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white"
                 }`}
               >
                 NOT TO ATTEND
@@ -114,7 +114,7 @@ const Rsvp = () => {
                 alt="Logo Wa"
                 width={550}
                 height={550}
-                className="object-contain w-[3.33vw] h-[3.33vw] lg:w-[20px] lg:h-[20px]"
+                className="object-contain w-[3.33vw] h-[3.33vw] lg:w-[20px] lg:h-[20px] tracking-wide"
               />
               CHAT SUPPORT
             </a>

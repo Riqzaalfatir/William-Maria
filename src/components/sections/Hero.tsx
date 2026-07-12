@@ -16,16 +16,16 @@ const Hero = () => {
           src="/images/hero/Pengantin-Dekstop.webp"
           alt="Jusuf & Evelyn"
           fill
-          className="object-cover object-[90%_17%] hidden lg:block"
+          className="object-cover object-[10%_17%] hidden lg:block"
           priority
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[20.77vw] lg:pt-[7.5%] text-center z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-start pt-[20.77vw] lg:pt-[7.7%] text-center z-10">
           <p className="text-white font-athelas text-[10px] lg:text-[18px] uppercase">
             The Wedding of
           </p>
         </div>
 
-        <div className="absolute top-[25.64vw] left-1/2 -translate-x-1/2 w-[255px] lg:top-[15.4%] lg:w-[411px] h-auto z-30">
+        <div className="absolute top-[25.64vw] left-1/2 -translate-x-1/2 w-[255px] lg:top-[16%] lg:w-[411px] h-auto z-30">
           <Image
             src="/images/hero/Logo-WmD.png"
             alt="Provite Logo"

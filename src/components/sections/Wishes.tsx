@@ -61,7 +61,7 @@ const Wishes = () => {
           YOUR WISHES
         </h2>
 
-        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.3vw] lg:mt-[31px]">
+        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.3vw] lg:mt-[28px]">
           <div className="flex flex-col gap-[20px]">
             <input
               type="text"
@@ -148,7 +148,7 @@ const Wishes = () => {
                             </p>
 
                             {/* Message */}
-                            <p className="font-athelas italic text-[3.08vw] lg:text-[15px] text-[#51483F]/85 text-left line-clamp-4 leading-[4.36vw] lg:leading-[22px] -mt-[30px] mb-4">
+                            <p className="font-athelas italic text-[3.08vw] lg:text-[15px] text-[#51483F]/85 text-left line-clamp-4 leading-[4.36vw] lg:leading-[22px] -mt-[30px] lg:-mt-[20px] mb-4">
                               {item.pesan}
                             </p>
 

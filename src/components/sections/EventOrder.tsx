@@ -28,7 +28,7 @@ const EventOrder = () => {
               HOLY <br className="lg:hidden" />
               MATRIMONY
             </h1>
-            <p className="pt-[2.5vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+            <p className="pt-[2.5vw] italic lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
               at <span className="font-urw">9.00</span> AM
             </p>
             <h2 className="pt-[2.2vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
@@ -64,22 +64,23 @@ const EventOrder = () => {
               DINNER <br className="lg:hidden" />
               RECEPTION
             </h1>
-            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas italic text-[3.59vw] lg:text-[20px] text-[#717071]">
               at <span className="font-urw">6.00</span> PM
             </p>
-            <p className="pt-[2.8vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[64px] text-[#717071] tracking-wide">
+            <p className="pt-[2.8vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               GRAND BALLROOM
             </p>
-            <h2 className="pt-[1.5vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
-              Intercontinental  Hotel <br className="lg:hidden" />
-              Bandung
-            </h2>
+           <h2 className="pt-[1.5vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
+    <span>Intercontinental</span>
+  <span className="ml-[8px] lg:ml-[10px]">Hotel</span>
+  <span className="block lg:inline lg:ml-[10px]">Bandung</span>
+</h2>
 
             <a
               href="https://maps.app.goo.gl/itNvPF8tGYZR4Whq9"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[6.15vw] w-[45.64vw] lg:h-[40px] lg:w-[268px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center text-[2.31vw] lg:text-[18px] rounded-[5px] lg:rounded-[7px] italic font-athelas gap-[1.28vw] lg:gap-[8px] mt-[6.41vw] lg:mt-[24px]"
+              className="h-[6.15vw] w-[45.64vw] lg:h-[40px] lg:w-[268px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center text-[2.31vw] lg:text-[18px] rounded-[5px] lg:rounded-[7px] font-averne gap-[0.7vw] lg:gap-[8px] mt-[6.41vw] lg:mt-[24px]"
             >
               <Image
                 src="/images/eventorder/Peta.webp"
@@ -104,7 +105,7 @@ const EventOrder = () => {
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 GENTLEMEN
               </p>
-              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[20px]">
+              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[22px]">
                 Black Suits & Tie <br />( No Batik )
               </p>
             </div>
@@ -112,7 +113,7 @@ const EventOrder = () => {
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 WOMAN
               </p>
-              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
+              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[22px]">
                 Formal Long Dresses <br />
                 in Shades of Navy or Black
               </p>

@@ -18,8 +18,8 @@ const Quote = () => {
         <div className="absolute inset-0 bg-black/45 pointer-events-none hidden lg:block" />
         <div className="absolute inset-0 bg-[#C3D9E6]/[13%] pointer-events-none lg:hidden" />
 
-        <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[43px] lg:pb-[108px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
-          <p className="font-averne text-[3.08vw] text-white lg:hidden tracking-wide">
+        <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[73px] lg:pb-[108px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
+          <p className="font-averne text-[3.08vw] text-white tracking-wide">
             GOD KNEW OUR HEARTS NEED EACH OTHER
           </p>
           <p className="font-athelas text-[2.56vw] text-white leading-[3.85vw]">
