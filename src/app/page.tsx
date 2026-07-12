@@ -12,6 +12,7 @@ import Quote from "@/components/sections/Quote";
 import Rsvp from "@/components/sections/Rsvp";
 import Wishes from "@/components/sections/Wishes";
 import Thankyou from "@/components/sections/Thankyou";
+import Faq from "@/components/sections/Faq";
 
 export default function Home() {
   const [start, setStart] = useState<boolean>(false);
@@ -37,7 +38,7 @@ export default function Home() {
         <Gallery />
         <Quote />
         <Rsvp />
-
+        <Faq />
        
         <div className="relative w-full">
           <div className="sticky top-0 h-dvh -z-10 -mb-[100dvh]">
@@ -48,10 +49,9 @@ export default function Home() {
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src="/video/Wishes.mp4" type="video/mp4" />
+              <source src="/video/Wil-Maria-compressed.mp4" type="video/mp4" />
             </video>
           </div>
-
           <Wishes />
           <Thankyou />
         </div>

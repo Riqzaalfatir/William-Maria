@@ -6,7 +6,7 @@ const Hero = () => {
     <div id="hero">
       <div className="relative w-full overflow-hidden [aspect-ratio:390/844] lg:min-h-screen lg:aspect-[1512/945]">
         <Image
-          src="/images/hero/Pengantin4.webp"
+          src="/images/hero/Pengantin-Wm3.webp"
           alt="Jusuf & Evelyn"
           fill
           className="object-cover lg:hidden"
@@ -20,7 +20,7 @@ const Hero = () => {
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-start pt-[20.77vw] lg:pt-[7.5%] text-center z-10">
-          <p className="text-white font-athelas text-[10px] lg:text-[18px] tracking-widest uppercase lg:tracking-normal">
+          <p className="text-white font-athelas text-[10px] lg:text-[18px] uppercase">
             The Wedding of
           </p>
         </div>

@@ -59,14 +59,14 @@ const WishesCard = ({ data, onClose }: WishesCardProps) => {
             {data.nama}
           </h3>
 
-          <div className="w-12 h-0.5 bg-[#51483F]/20 mb-5 rounded-full" />
+          <div className="w-12 h-0.5 bg-[#51483F]/20 rounded-full" />
 
-          <p className="font-duende text-[48px] text-[#51483F]/20 leading-none mb-3">
+          <p className="font-duende -ml-[30px] text-[88px] text-[#51483F]/20 leading-none">
             "
           </p>
 
           {/* Pesan */}
-          <p className="text-[13px] font-athelas italic leading-[1.8] text-[#51483F]/85 line-clamp-6 text-center mb-7 break-words max-w-[85%]">
+          <p className="text-[13px] -mt-[25px] font-athelas italic leading-[1.8] text-[#51483F]/85 line-clamp-6 text-center mb-7 break-words max-w-[85%]">
             {data.pesan}
           </p>
 

@@ -55,31 +55,31 @@ const Wishes = () => {
     <>
       <section
         id="wishes"
-        className="w-full flex flex-col items-center pt-[104px] pb-[73px] lg:pt-[124px] lg:pb-[25px] leading-none"
+        className="w-full flex flex-col items-center pt-[26vw] pb-[18.72vw] lg:pt-[124px] lg:pb-[25px] leading-none"
       >
         <h2 className="font-averne text-[8.21vw] lg:text-[48px] text-white">
           YOUR WISHES
         </h2>
 
-        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[38px] lg:mt-[31px]">
+        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.3vw] lg:mt-[31px]">
           <div className="flex flex-col gap-[20px]">
             <input
               type="text"
               value={nama}
               placeholder="Desy (Tester)"
               onChange={(e) => setNama(e.target.value)}
-              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[15px] h-[8.46vw] lg:h-[40px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
+              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[2.56vw] lg:px-[15px] h-[8.46vw] lg:h-[40px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
 
             <textarea
               value={pesan}
               onChange={(e) => setPesan(e.target.value)}
-              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[10px] lg:px-[15px] py-[5px] lg:py-[10px] h-[28.97vw] lg:h-[140px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
+              className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[2.56vw] lg:px-[15px] py-[1.28vw] lg:py-[10px] h-[28.97vw] lg:h-[140px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
 
             <button
               onClick={handleSubmit}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-0.5 lg:gap-1 text-[#FFFFFF] tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-1.5 text-[#FFFFFF] tracking-widest"
             >
               <Image
                 src="/images/wishes/Panah.png"
@@ -100,19 +100,19 @@ const Wishes = () => {
                 <div>
                   <div className="sticky top-0 w-full h-[3.08vw] lg:h-[15px] bg-[#535353] z-10" />
 
-                  <div className="px-[10px] lg:px-[26px]">
+                  <div className="px-[2.56vw] lg:px-[26px]">
                     {pesanList.map((item, index, array) => (
                       <div key={item.id}>
-                        <p className="text-white font-athelas text-[3.08vw] mb-[10px] lg:text-[14.5px] lg:mb-[12px]">
+                        <p className="text-white font-athelas text-[3.08vw] mb-[2.56vw] lg:text-[14.5px] lg:mb-[12px]">
                           {item.nama}
                         </p>
 
-                        <p className="text-white font-athelas text-[3.08vw] lg:text-[14.5px] tracking-wide mb-[13px] lg:mb-[16px] break-words leading-[3.33vw] lg:leading-[18.24px]">
+                        <p className="text-white font-athelas text-[3.08vw] lg:text-[14.5px] tracking-wide mb-[3.33vw] lg:mb-[16px] break-words leading-[3.33vw] lg:leading-[18.24px]">
                           {item.pesan}
                         </p>
 
                         {index !== array.length - 1 && (
-                          <div className="border-t border-white mb-[15px] lg:mb-[19px]" />
+                          <div className="border-t border-white mb-[3.85vw] lg:mb-[19px]" />
                         )}
                       </div>
                     ))}
@@ -121,8 +121,8 @@ const Wishes = () => {
                   <div className="sticky bottom-0 w-full h-[3.08vw] lg:h-[5px] bg-[#535353] z-10" />
                 </div>
               ) : (
-                <div className="w-full px-[5px] lg:px-[10px] py-[20px] lg:py-[20px]">
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-[10px] lg:gap-[18px]">
+                <div className="w-full px-[1.28vw] lg:px-[10px] py-[20px] lg:py-[20px]">
+                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-[2.56vw] lg:gap-[18px]">
                     {pesanList.map((item) => {
                       const initials = item.nama
                         .split(" ")
@@ -141,14 +141,14 @@ const Wishes = () => {
                           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#51483F]/60 via-[#51483F]/30 to-transparent" />
 
                           {/* Content area */}
-                          <div className="p-[14px] lg:p-[20px] flex-1 flex flex-col justify-between">
+                          <div className="p-[2vw] lg:p-[20px] flex-1 flex flex-col justify-between">
                             {/* Quotation mark */}
-                            <p className="text-[12.31vw] lg:text-[56px] font-duende text-[#51483F]/20 leading-none mb-1 group-hover:text-[#51483F]/30 transition-colors">
+                            <p className="text-[21vw] lg:text-[56px] font-duende text-[#51483F]/20 leading-none group-hover:text-[#51483F]/30 transition-colors -ml-[10px]">
                               "
                             </p>
 
                             {/* Message */}
-                            <p className="font-athelas italic text-[3.08vw] lg:text-[15px] text-[#51483F]/85 text-left line-clamp-4 leading-[4.36vw] lg:leading-[22px] mb-4">
+                            <p className="font-athelas italic text-[3.08vw] lg:text-[15px] text-[#51483F]/85 text-left line-clamp-4 leading-[4.36vw] lg:leading-[22px] -mt-[30px] mb-4">
                               {item.pesan}
                             </p>
 
@@ -157,7 +157,7 @@ const Wishes = () => {
                           </div>
 
                           {/* Avatar + Name footer */}
-                          <div className="bg-[#51483F] px-[12px] lg:px-[16px] py-[10px] lg:py-[14px] flex items-center gap-[8px] lg:gap-[12px]">
+                          <div className="bg-[#51483F] px-[3.08vw] lg:px-[16px] py-[2.56vw] lg:py-[14px] flex items-center gap-[2.05vw] lg:gap-[12px]">
                             <div className="w-[6.15vw] h-[6.15vw] lg:w-[36px] lg:h-[36px] rounded-full bg-white/15 flex items-center justify-center flex-shrink-0 border border-white/20">
                               <p className="text-white text-[2.56vw] lg:text-[13px] font-athelas font-bold">
                                 {initials}
@@ -186,7 +186,7 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 text-white tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-2 text-white tracking-widest"
             >
               <Image
                 src="/images/wishes/Pesan.png"
@@ -204,14 +204,14 @@ const Wishes = () => {
             <div className="relative overflow-hidden rounded-[28px] border border-[#51483F]/20 bg-[#F9FBFA] shadow-lg w-full max-w-[84.62vw] lg:max-w-[420px]">
               <div className="absolute top-0 left-0 w-full h-[1.54vw] lg:h-[8px] bg-[#51483F]" />
 
-              <div className="px-[28px] lg:px-[40px] pt-[36px] lg:pt-[48px] pb-[28px] lg:pb-[40px] flex flex-col items-center text-center">
-                <div className="w-[18.46vw] h-[18.46vw] lg:w-[96px] lg:h-[96px] rounded-full bg-[#51483F]/10 border border-[#51483F]/15 flex items-center justify-center mb-[20px] lg:mb-[28px]">
+              <div className="px-[7.18vw] lg:px-[40px] pt-[9.23vw] lg:pt-[48px] pb-[7.18vw] lg:pb-[40px] flex flex-col items-center text-center">
+                <div className="w-[18.46vw] h-[18.46vw] lg:w-[96px] lg:h-[96px] rounded-full bg-[#51483F] border border-[#51483F]/15 flex items-center justify-center mb-[5.13vw] lg:mb-[28px]">
                   <Image
-                    src="/images/wishes/Pesan.svg"
+                    src="/images/wishes/Pesan.png"
                     alt="Success"
                     width={34}
                     height={34}
-                    className="object-contain w-[8.72vw] h-[8.72vw] lg:w-[44px] lg:h-[44px]"
+                    className="object-contain w-[10.72vw] h-[10.72vw] lg:w-[44px] lg:h-[44px]"
                   />
                 </div>
 
@@ -219,7 +219,7 @@ const Wishes = () => {
                   Thank You
                 </h3>
 
-                <div className="w-[17.95vw] lg:w-[90px] h-[1px] bg-[#51483F]/30 my-[16px] lg:my-[22px]" />
+                <div className="w-[17.95vw] lg:w-[90px] h-[1px] bg-[#51483F]/30 my-[4.10vw] lg:my-[22px]" />
 
                 <p className="font-athelas italic text-[3.08vw] lg:text-[16px] leading-[5.64vw] lg:leading-[26px] text-[#51483F]/85 max-w-[61.54vw] lg:max-w-[320px]">
                   Your wishes and prayers mean so much to us. Thank you for
@@ -228,7 +228,7 @@ const Wishes = () => {
 
                 <button
                   onClick={() => setShowPopup(false)}
-                  className="mt-[28px] lg:mt-[36px] bg-[#51483F] hover:bg-[#51483F]/85 active:scale-95 transition-all duration-300 text-white font-athelas uppercase text-[2.82vw] lg:text-[14px] tracking-[0.13vw] lg:tracking-[0.6px] px-[32px] lg:px-[40px] h-[9.74vw] lg:h-[48px] rounded-full"
+                  className="mt-[7.18vw] lg:mt-[36px] bg-[#51483F] hover:bg-[#51483F]/85 active:scale-95 transition-all duration-300 text-white font-athelas uppercase text-[2.82vw] lg:text-[14px] tracking-[0.13vw] lg:tracking-[0.6px] px-[8.21vw] lg:px-[40px] h-[9.74vw] lg:h-[48px] rounded-full"
                 >
                   Close
                 </button>

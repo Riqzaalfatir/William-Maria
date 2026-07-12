@@ -28,16 +28,16 @@ const EventOrder = () => {
               HOLY <br className="lg:hidden" />
               MATRIMONY
             </h1>
-            <p className="pt-[1.79vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] italic">
-              at 9.00 AM
+            <p className="pt-[2.5vw] lg:pt-[34px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+              at <span className="font-urw">9.00</span> AM
             </p>
-            <h2 className="pt-[2.5vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
+            <h2 className="pt-[2.2vw] lg:pt-[25px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
             </h2>
-            <p className="pt-[4.62vw] lg:pt-[65px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+            <p className="pt-[3.5vw] lg:pt-[65px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
               DRESS CODE
             </p>
-            <p className="pt-[0.26vw] lg:pt-[22px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
+            <p className="pt-[0.7vw] lg:pt-[22px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
               Neutral Colors <br />( No Batik )
             </p>
             <Image
@@ -64,14 +64,14 @@ const EventOrder = () => {
               DINNER <br className="lg:hidden" />
               RECEPTION
             </h1>
-            <p className="pt-[1.79vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] italic text-[#717071]">
-              at 6.00 PM
+            <p className="pt-[2.5vw] lg:pt-[30px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+              at <span className="font-urw">6.00</span> PM
             </p>
-            {/* <p className="pt-[2.56vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[64px] text-[#717071]">
+            <p className="pt-[2.8vw] lg:pt-[42px] font-athelas text-[3.59vw] lg:text-[64px] text-[#717071] tracking-wide">
               GRAND BALLROOM
-            </p> */}
-            <h2 className="pt-[0.51vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none tracking-wide">
-              Intercontinental Hotel <br className="lg:hidden" />
+            </p>
+            <h2 className="pt-[1.5vw] lg:pt-[33px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
+              Intercontinental  Hotel <br className="lg:hidden" />
               Bandung
             </h2>
 
@@ -92,11 +92,11 @@ const EventOrder = () => {
             </a>
           </div>
 
-          <div className="pt-[11.54vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
+          <div className="pt-[11vw] lg:pt-[84px] flex flex-col items-center text-center justify-center leading-none">
             <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F]">
               DRESS CODE
             </h1>
-            <p className="pt-[2.82vw] lg:pt-[27px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
+            <p className="pt-[3vw] lg:pt-[27px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px]">
               We kindly encourage our guest to dress <br />
               as follows on our special day
             </p>
@@ -104,15 +104,15 @@ const EventOrder = () => {
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 GENTLEMEN
               </p>
-              <p className="pt-[0.77vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[20px]">
+              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[20px]">
                 Black Suits & Tie <br />( No Batik )
               </p>
             </div>
-            <div className="pt-[2.82vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
+            <div className="pt-[3vw] lg:pt-[36px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 WOMAN
               </p>
-              <p className="pt-[0.77vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
+              <p className="pt-[1vw] lg:pt-[16px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[20px]">
                 Formal Long Dresses <br />
                 in Shades of Navy or Black
               </p>

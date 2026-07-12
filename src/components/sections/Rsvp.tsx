@@ -33,23 +33,23 @@ const Rsvp = () => {
   return (
     <>
       <section className="bg[#F9FBFA]">
-        <div className="pt-[100px] pb-[100px] lg:pt-[105px] lg:pb-[120px]">
+        <div className="pt-[23vw] pb-[24vw] lg:pt-[105px] lg:pb-[120px]">
           <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] flex justify-center">
             RSVP
           </h1>
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <p className="pt-[6px] lg:pt-[20px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F]">
+            <p className="pt-[1.3vw] lg:pt-[20px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F]">
               Mr./Mrs./Ms.
             </p>
-            <p className="pt-[6px] lg:pt-[48px] font-athelas font-bold text-[4.10vw] lg:text-[18px] text-[#51483F]  break-words max-w-[90%]">
+            <p className="pt-[1.6vw] lg:pt-[48px] font-athelas font-bold text-[4.10vw] lg:text-[18px] text-[#51483F]  break-words max-w-[90%]">
               NAMA & PARTNER
             </p>
-            <p className="pt-[18px] lg:pt-[48px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[26px]">
+            <p className="pt-[5.13vw] lg:pt-[48px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[26px]">
               Please confirm your attendance before <br />
               <span className="font-bold">Sunday, 16 August 2026</span>
             </p>
 
-            <div className="pt-[18px] lg:pt-[47px] flex items-center justify-center gap-[8px] lg:gap-[24px]">
+            <div className="pt-[4.62vw] lg:pt-[47px] flex items-center justify-center gap-[2.05vw] lg:gap-[24px]">
               <button
                 onClick={() => setPilihan(pilihan === "hadir" ? null : "hadir")}
                 className={`h-[5.13vw] w-[18.97vw] lg:h-[40px] lg:w-[172px] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] transition-colors duration-200 ${
@@ -86,7 +86,7 @@ const Rsvp = () => {
               </button>
             </div>
 
-            <p className="pt-[43px] lg:pt-[43px] font-athelas text-[3.08vw] lg:text-[18px] text-[#51483F]">
+            <p className="pt-[11.5vw] lg:pt-[43px] font-athelas text-[3.08vw] lg:text-[18px] text-[#51483F]">
               {pilihan === "tidak_hadir"
                 ? "ARE YOU SURE?"
                 : "Confirm your selection?"}
@@ -94,12 +94,12 @@ const Rsvp = () => {
 
             <button
               onClick={handleConfirm}
-              className="h-[5.13vw] w-[38.21vw] lg:h-[40px] lg:w-[368px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[17px] lg:mt-[42px]"
+              className="h-[5.13vw] w-[38.21vw] lg:h-[40px] lg:w-[368px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[4.87vw] lg:mt-[42px]"
             >
               CONFIRM
             </button>
 
-            <p className="pt-[24px] lg:pt-[67px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]">
+            <p className="pt-[6.4vw] lg:pt-[67px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]">
               having trouble with RSVP?
             </p>
 
@@ -107,7 +107,7 @@ const Rsvp = () => {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[6.15vw] w-[38.21vw] lg:h-[40px] lg:w-[212px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[5px] lg:text-[18px] lg:rounded-[7px] mt-[17px] mt-[20px] lg:mt-[50px] transition-colors duration-200"
+              className="h-[6.15vw] w-[38.21vw] lg:h-[40px] lg:w-[212px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[1.28vw] lg:text-[18px] lg:rounded-[7px] mt-[5.6vw] lg:mt-[50px] transition-colors duration-200"
             >
               <Image
                 src="/images/rsvp/Wa.png"
