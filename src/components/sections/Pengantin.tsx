@@ -9,7 +9,12 @@ const Pengantin = () => {
       <img
         src="/images/pengantin/Sl-Wima.webp"
         alt="Nicholas & Clara"
-        className="w-full h-full object-cover pointer-events-none"
+        className="w-full h-full object-cover pointer-events-none lg:hidden"
+      />
+      <img
+        src="/images/pengantin/Sl-WIMAD.webp"
+        alt="Nicholas & Clara"
+        className="w-full h-full object-cover pointer-events-none hidden lg:block"
       />
     </section>
   );

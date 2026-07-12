@@ -38,13 +38,13 @@ const Rsvp = () => {
             RSVP
           </h1>
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <p className="pt-[1.3vw] lg:pt-[16px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F]">
+            <p className="pt-[1.4vw] lg:pt-[18px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F] tracking-[2%]">
               Mr./Mrs./Ms.
             </p>
-            <p className="pt-[1.6vw] lg:pt-[10px] font-athelas font-bold text-[4.10vw] lg:text-[20px] text-[#51483F]  break-words max-w-[90%]">
+            <p className="pt-[1.6vw] lg:pt-[10px] font-athelas font-bold text-[4.10vw] lg:text-[20px] text-[#51483F]  break-words max-w-[90%] tracking-[2%]">
               NAMA & PARTNER
             </p>
-            <p className="pt-[5.13vw] lg:pt-[17.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[23px]">
+            <p className="pt-[5.2vw] lg:pt-[17.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[23px] tracking-[2%]">
               Please confirm your attendance before <br />
               <span className="font-bold">Sunday, 16 August 2026</span>
             </p>
@@ -82,7 +82,7 @@ const Rsvp = () => {
                     : "border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white"
                 }`}
               >
-                NOT TO ATTEND
+                UNABLE TO ATTEND
               </button>
             </div>
 
@@ -94,12 +94,12 @@ const Rsvp = () => {
 
             <button
               onClick={handleConfirm}
-              className="h-[5.13vw] w-[38.21vw] lg:h-[31px] lg:w-[214px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[4.87vw] lg:mt-[32px]"
+              className="h-[5.3vw] w-[38.21vw] lg:h-[31px] lg:w-[214px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[4.87vw] lg:mt-[32px]"
             >
               CONFIRM
             </button>
 
-            <p className="pt-[6.4vw] lg:pt-[39px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]">
+            <p className="pt-[6.8vw] lg:pt-[41px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]">
               having trouble with RSVP?
             </p>
 
@@ -107,7 +107,7 @@ const Rsvp = () => {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-[6.15vw] w-[38.21vw] lg:h-[30px] lg:w-[214px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[1.28vw] lg:gap-[7px] lg:text-[18px] lg:rounded-[7px] mt-[5.6vw] lg:mt-[35px] transition-colors duration-200"
+              className="h-[5.5vw] w-[38.21vw] lg:h-[30px] lg:w-[214px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[1.28vw] lg:gap-[7px] lg:text-[18px] lg:rounded-[7px] mt-[5.6vw] lg:mt-[35px] transition-colors duration-200"
             >
               <Image
                 src="/images/rsvp/Wa.png"

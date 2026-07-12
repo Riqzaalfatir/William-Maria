@@ -61,7 +61,7 @@ const Wishes = () => {
           YOUR WISHES
         </h2>
 
-        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.3vw] lg:mt-[28px]">
+        <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.5vw] lg:mt-[28px]">
           <div className="flex flex-col gap-[20px]">
             <input
               type="text"
@@ -79,7 +79,7 @@ const Wishes = () => {
 
             <button
               onClick={handleSubmit}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-1.5 text-[#FFFFFF] tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-1.5 text-[#FFFFFF] tracking-wide"
             >
               <Image
                 src="/images/wishes/Panah.png"

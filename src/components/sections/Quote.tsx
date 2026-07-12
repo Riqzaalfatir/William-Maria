@@ -24,7 +24,7 @@ const Quote = () => {
     </p>,
 
     // Slide 2 - Numbers
-    <div key="numbers" className="flex flex-col items-center mt-[30px]">
+    <div key="numbers" className="flex flex-col items-center -mt-[35px] lg:mt-[30px]">
       <Image
         src="/images/quote/Item.webp"
         alt="William"
@@ -33,15 +33,15 @@ const Quote = () => {
         className="h-auto w-[248px] lg:w-[620px] ml-[0px]"
       />
 
-      <div className="flex items-start justify-center gap-[29px] -ml-[9.5px] lg:gap-[45px] lg:-ml-[25px] lg:mt-[15px]">
-        <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[20px]">
+      <div className="flex items-start justify-center gap-[29px] -ml-[4.5px] lg:gap-[45px] lg:-ml-[25px] mt-[5px] lg:mt-[15px]">
+        <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">26</p>
           <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[12px] lg:leading-[26px]">
             ( 26.12.21 ) <br />
             <span className="text-[6.72px] lg:text-[20px]">William declared his love</span>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[20px]">
+        <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">9</p>
           <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[8.96px] lg:leading-[26px]">
             ( 9.1.22 ) <br />
@@ -51,7 +51,7 @@ const Quote = () => {
             </span>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[20px] ml-[3px] lg:ml-[15px]">
+        <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px] ml-[7px] lg:ml-[15px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">9,1,26</p>
           <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[8.96px] lg:leading-[26px]">
             ( 9.1.22 to 19.9.26 )<br />
@@ -74,7 +74,7 @@ const Quote = () => {
         className="h-auto w-[150px] lg:w-[380px]"
       />
 
-      <div className="flex items-start justify-center gap-[20px] ml-[15px] lg:gap-[45px] lg:ml-[50px] pt-[5px]">
+      <div className="flex items-start justify-center gap-[17px] ml-[18px] lg:gap-[45px] lg:ml-[50px] pt-[5px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[17px]">
           <p className="font-athelas text-[8px] lg:text-[20px] text-white">UPWARD FLOW</p>
           <p className="text-[6px] lg:text-[18px] text-white font-athelas leading-[7px] lg:leading-[20px] tracking-wide">
@@ -125,7 +125,12 @@ const Quote = () => {
         <img
           src="/images/quote/Bg-Quotee.webp"
           alt="Nicholas & Clara"
-          className="absolute inset-0 w-full h-full object-cover object-top lg:object-[50%_95%] pointer-events-none"
+          className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none lg:hidden"
+        />
+        <img
+          src="/images/quote/Quote.webp"
+          alt="Nicholas & Clara"
+          className="absolute inset-0 w-full h-full object-cover object-top lg:object-[50%_50%] pointer-events-none hidden lg:block"
         />
         {/* <img
           src="/images/quote/Bg-QuoteD.webp"
@@ -136,7 +141,7 @@ const Quote = () => {
         <div className="absolute inset-0 bg-[#C3D9E6]/[13%] pointer-events-none" />
 
         <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[109px] lg:pb-[155px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
-          <p className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-wide">
+          <p className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-[6%]">
             GOD KNEW OUR HEARTS NEED EACH OTHER
           </p>
 

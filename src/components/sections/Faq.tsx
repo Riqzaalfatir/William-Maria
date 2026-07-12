@@ -23,7 +23,7 @@ const Faq = () => {
               duration: 1.5,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="uppercase text-center text-[#51483F] font-averne text-[32px] md:text-[46px] lg:text-[48px] mb-[9px] lg:-mb-[20px]"
+            className="uppercase text-center text-[#51483F] font-averne text-[32px] md:text-[46px] lg:text-[48px] -mb-[5px] lg:-mb-[20px] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]"
           >
             FAQ
           </motion.h2>
@@ -31,7 +31,7 @@ const Faq = () => {
           <div className=" lg:max-h-none  lg:overflow-visible">
             {/* RENDER FAQ */}
             {faqData.map((section, sIndex) => (
-              <div key={sIndex} className="mt-[15px] lg:mt-[32px]">
+              <div key={sIndex} className="mt-[15px] lg:mt-[30px]">
                 {/* JUDUL FAQ */}
                 <motion.h3
                   initial={{ opacity: 0, y: 80 }}
@@ -42,7 +42,7 @@ const Faq = () => {
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.2,
                   }}
-                  className="text-center text-[#51483F] font-athelas text-[16px] md:text-[22px] lg:text-[24px] uppercase tracking-wide"
+                  className="text-center text-[#51483F] font-athelas text-[16px] md:text-[22px] lg:text-[24px] uppercase tracking-[4%]"
                 >
                   {section.judul}
                 </motion.h3>
@@ -77,7 +77,7 @@ const Faq = () => {
                       >
                         <button
                           onClick={() => toggle(key)}
-                          className="w-full flex justify-between items-center py-[2px] lg:py-[18px] text-left text-[#51483F]"
+                          className="w-full flex justify-between items-center py-[2px] lg:py-[13px] text-left text-[#51483F]"
                         >
                           <span className="text-[12px] md:text-[18px] lg:text-[18px] text-[#51483F] font-athelas pr-4">
                             {item.pertanyaan}

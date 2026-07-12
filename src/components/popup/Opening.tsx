@@ -58,7 +58,14 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
               src="/images/opening/OpeningBackground.webp"
               alt="background"
               fill
-              className="object-cover object-top"
+              className="object-cover object-top lg:hidden"
+              priority
+            />
+            <Image
+              src="/images/opening/OpeningBackgroundD.webp"
+              alt="background"
+              fill
+              className="object-cover object-top hidden lg:block"
               priority
             />
           </motion.div>
@@ -69,10 +76,10 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             initial={{ opacity: 1, scale: 1, y: 0 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit="exit"
-            className="relative rounded-[20px] md:rounded-2xl overflow-hidden w-[290px] md:w-[416px] flex flex-col z-[100] bg-[#463931C2]/70 [box-shadow:0px_8px_11.6px_0px_rgba(0,0,0,0.54)]"
+            className="relative rounded-[20px] lg:rounded-4xl overflow-hidden w-[290px] lg:w-[452px] flex flex-col z-[100] bg-[#463931C2]/70 [box-shadow:0px_8px_11.6px_0px_rgba(0,0,0,0.54)]"
           >
-            <div className="bg-[#463931]/76 flex flex-col items-center text-center px-4 pt-[56px] lg:pt-[27px] flex-1 leading-none">
-              <p className="text-[12px] lg:text-[14px] text-white font-athelas tracking-wide italic">
+            <div className="bg-[#463931]/76 flex flex-col items-center text-center px-4 pt-[56px] lg:pt-[87px] flex-1 leading-none">
+              <p className="text-[12px] lg:text-[18px] text-white font-athelas italic tracking-[5%]">
                 we invite you to celebrate
               </p>
               <Image
@@ -80,25 +87,25 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 alt="Provite Logo"
                 width={450}
                 height={450}
-                className="w-[181px] lg:w-[243px] pt-[4px] lg:mt-[6px]"
+                className="w-[181px] lg:w-[281px] pt-[4px] lg:mt-[9px]"
               />
-              <p className="text-[12px] lg:text-[14px] text-white font-averne tracking-wide pt-[9px]">
+              <p className="text-[12px] lg:text-[18px] text-white/90 font-averne pt-[10px] lg:pt-[11px] tracking-[2%]">
                 SATURDAY, 19 SEPTEMBER 2026
               </p>
-              <p className="text-[10px] lg:text-[14px] text-white font-athelas font-bold italic mt-[31px] lg:pt-[14px] md:pt-[30px]">
+              <p className="text-[12px] lg:text-[18px] text-white font-athelas font-bold italic mt-[36px] lg:pt-[14px] md:pt-[48px] tracking-[2%]">
                 Mr. /Mrs. / Ms.
               </p>
-              <p className="text-[16px] lg:text-[18px] text-white font-athelas font-bold pt-[5px] md:pt-[17px] break-words max-w-full">
+              <p className="text-[16px] lg:text-[24px] text-white font-athelas font-bold pt-[7px] md:pt-[6px] break-words max-w-full">
                 NAMA & PARTNER
               </p>
-              <p className="text-[12px] lg:text-[12px] text-white font-athelas leading-[19px] lg:leading-[16px] pt-[14px] md:pt-[23px] tracking-wide italic">
+              <p className="text-[12px] lg:text-[18px] text-white/90 font-athelas leading-[20px] lg:leading-[31px] pt-[14px] md:pt-[21px] tracking-[5%] italic">
                 we sincerely apologize <br />
                 for any misspelling of names or titles
               </p>
-              <div className="mb-[41px] lg:mb-[39px]">
+              <div className="mb-[41px] lg:mb-[67px]">
                 <button
                   onClick={handleOpen}
-                  className="bg-[#878787] flex items-center justify-center text-[#FFFFFF] w-[162px] h-[22px] md:w-[220px] md:h-[40px] rounded-[6px] uppercase font-athelas italic text-[12px] lg:text-[18px] mt-[22px] md:mt-[15px]"
+                  className="bg-[#878787] flex items-center justify-center text-[#FFFFFF] w-[162px] h-[22px] lg:w-[253px] lg:h-[31px] rounded-[6px] lg:rounded-[9px] uppercase font-athelas italic text-[12px] lg:text-[18px] mt-[18px] md:mt-[34px]"
                 >
                   <span>OPEN</span>
                 </button>

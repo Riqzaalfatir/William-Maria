@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="absolute top-[25.64vw] left-1/2 -translate-x-1/2 w-[255px] lg:top-[16%] lg:w-[411px] h-auto z-30">
+        <div className="absolute top-[25.9vw] left-1/2 -translate-x-1/2 w-[255px] lg:top-[15.8%] lg:w-[411px] h-auto z-30">
           <Image
             src="/images/hero/Logo-WmD.png"
             alt="Provite Logo"
