@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+html,
+body {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scrollbar-width: none;
   -ms-overflow-style: none;
-} */
+}
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
-} 
+}

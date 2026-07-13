@@ -1,6 +1,9 @@
+// page.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { usePreloader } from "@/hooks/usePreloader";
+import LoadingScreen from "@/ui/LoadingScreen";
 import Opening from "@/components/popup/Opening";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
@@ -13,9 +16,13 @@ import Rsvp from "@/components/sections/Rsvp";
 import Wishes from "@/components/sections/Wishes";
 import Thankyou from "@/components/sections/Thankyou";
 import Faq from "@/components/sections/Faq";
+import ResponsiveVideo from "@/hooks/ResponsiveVideo";
 
 export default function Home() {
   const [start, setStart] = useState<boolean>(false);
+  const [showLoading, setShowLoading] = useState<boolean>(true);
+  const { progress } = usePreloader();
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (!start) {
@@ -24,6 +31,16 @@ export default function Home() {
     } else {
       document.body.classList.remove("overflow-hidden");
       document.documentElement.classList.remove("overflow-hidden");
+    }
+  }, [start]);
+
+  // Persis pola project lama: play() dipicu begitu `start` jadi true
+  useEffect(() => {
+    if (!videoRef.current) return;
+    if (start) {
+      videoRef.current.play();
+    } else {
+      videoRef.current.pause();
     }
   }, [start]);
 
@@ -39,26 +56,177 @@ export default function Home() {
         <Quote />
         <Rsvp />
         <Faq />
-       
+
         <div className="relative w-full">
           <div className="sticky top-0 h-dvh -z-10 -mb-[100dvh]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <ResponsiveVideo
+              ref={videoRef}
+              mobileSrc="/video/Wil-Maria-compressed.mp4"
+              desktopSrc="/video/Wil-MariaD-compressed.mp4"
               className="w-full h-full object-cover"
-            >
-              <source src="/video/Wil-Maria-compressed.mp4" type="video/mp4" />
-            </video>
+            />
           </div>
           <Wishes />
           <Thankyou />
         </div>
-
       </main>
 
       {!start && <Opening setStart={setStart} namaTamu="Sela" />}
+
+      {showLoading && (
+        <LoadingScreen
+          progress={progress}
+          onDone={() => setShowLoading(false)}
+        />
+      )}
     </>
   );
 }
+
+
+// "use client";
+
+// import { useState, useEffect } from "react";
+// import Opening from "@/components/popup/Opening";
+// import Header from "@/components/layout/Header";
+// import Hero from "@/components/sections/Hero";
+// import Profile from "@/components/sections/Profile";
+// import Pengantin from "@/components/sections/Pengantin";
+// import EventOrder from "@/components/sections/EventOrder";
+// import Gallery from "@/components/sections/Gallery";
+// import Quote from "@/components/sections/Quote";
+// import Rsvp from "@/components/sections/Rsvp";
+// import Wishes from "@/components/sections/Wishes";
+// import Thankyou from "@/components/sections/Thankyou";
+// import Faq from "@/components/sections/Faq";
+// import ResponsiveVideo from "@/hooks/ResponsiveVideo";
+
+
+// export default function Home() {
+//   const [start, setStart] = useState<boolean>(false);
+
+//   useEffect(() => {
+//     if (!start) {
+//       document.body.classList.add("overflow-hidden");
+//       document.documentElement.classList.add("overflow-hidden");
+//     } else {
+//       document.body.classList.remove("overflow-hidden");
+//       document.documentElement.classList.remove("overflow-hidden");
+//     }
+//   }, [start]);
+
+//   return (
+//     <>
+//       <main className="block">
+//         <Header />
+//         <Hero />
+//         <Profile />
+//         <Pengantin />
+//         <EventOrder />
+//         <Gallery />
+//         <Quote />
+//         <Rsvp />
+//         <Faq />
+       
+//         <div className="relative w-full">
+//           <div className="sticky top-0 h-dvh -z-10 -mb-[100dvh]">
+            
+//              <ResponsiveVideo
+//     mobileSrc="/video/Wil-Maria-compressed.mp4"
+//     desktopSrc="/video/Wil-MariaD-compressed.mp4"
+//     className="w-full h-full object-cover"
+//   />
+//                       </div>
+//           <Wishes />
+//           <Thankyou />
+//         </div>
+
+//       </main>
+
+//       {!start && <Opening setStart={setStart} namaTamu="Sela" />}
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+// SEBELUM DIBERIKAN LOGIC UNDUH 
+// "use client";
+
+// import { useState, useEffect } from "react";
+// import Opening from "@/components/popup/Opening";
+// import Header from "@/components/layout/Header";
+// import Hero from "@/components/sections/Hero";
+// import Profile from "@/components/sections/Profile";
+// import Pengantin from "@/components/sections/Pengantin";
+// import EventOrder from "@/components/sections/EventOrder";
+// import Gallery from "@/components/sections/Gallery";
+// import Quote from "@/components/sections/Quote";
+// import Rsvp from "@/components/sections/Rsvp";
+// import Wishes from "@/components/sections/Wishes";
+// import Thankyou from "@/components/sections/Thankyou";
+// import Faq from "@/components/sections/Faq";
+
+// export default function Home() {
+//   const [start, setStart] = useState<boolean>(false);
+
+//   useEffect(() => {
+//     if (!start) {
+//       document.body.classList.add("overflow-hidden");
+//       document.documentElement.classList.add("overflow-hidden");
+//     } else {
+//       document.body.classList.remove("overflow-hidden");
+//       document.documentElement.classList.remove("overflow-hidden");
+//     }
+//   }, [start]);
+
+//   return (
+//     <>
+//       <main className="block">
+//         <Header />
+//         <Hero />
+//         <Profile />
+//         <Pengantin />
+//         <EventOrder />
+//         <Gallery />
+//         <Quote />
+//         <Rsvp />
+//         <Faq />
+       
+        // <div className="relative w-full">
+        //   <div className="sticky top-0 h-dvh -z-10 -mb-[100dvh]">
+        //     <video
+        //       autoPlay
+        //       loop
+        //       muted
+        //       playsInline
+        //       className="w-full h-full object-cover lg:hidden"
+        //     >
+        //       <source src="/video/Wil-Maria-compressed.mp4" type="video/mp4" />
+        //     </video>
+        //     <video
+        //       autoPlay
+        //       loop
+        //       muted
+        //       playsInline
+        //       className="w-full h-full object-cover hidden lg:block"
+        //     >
+        //       <source src="/video/Wil-MariaD-compressed.mp4" type="video/mp4" />
+        //     </video>
+        //   </div>
+//           <Wishes />
+//           <Thankyou />
+//         </div>
+
+//       </main>
+
+//       {!start && <Opening setStart={setStart} namaTamu="Sela" />}
+//     </>
+//   );
+// }

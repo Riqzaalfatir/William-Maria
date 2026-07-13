@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from "react";
@@ -5,6 +6,8 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+import ResponsivePicture from "@/hooks/ResponsivePicture";
+
 
 const galleryImage = "/images/gallery/Pengantin.webp";
 
@@ -13,26 +16,20 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[138px]">
+      <section id="gallery" className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[138px]">
         <div
           className="relative w-full flex items-center justify-center"
           onClick={() => setLightboxOpen(true)}
         >
-          <Image
-            src={galleryImage}
+           <ResponsivePicture
+            mobileSrc={galleryImage}
+            desktopSrc="/images/gallery/PengantinD.webp"
             alt="Gallery"
+            fill={false}
             width={1200}
             height={1600}
-            sizes="100vw"
-            className="w-[87.18vw] h-auto object-cover lg:hidden"
-          />
-          <Image
-            src="/images/gallery/PengantinD.webp"
-            alt="Gallery"
-            width={1200}
-            height={1600}
-            sizes="100vw"
-            className="w-[1098px] h-auto object-cover hidden lg:block"
+            className="w-[87.18vw] h-auto object-cover lg:w-[1098px]"
+            unoptimized
           />
         </div>
       </section>
@@ -49,6 +46,59 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+// SEBELUM DIBERIKAN OGIC DOWNLOAD
+// "use client";
+
+// import React, { useState } from "react";
+// import Image from "next/image";
+// import Lightbox from "yet-another-react-lightbox";
+// import Zoom from "yet-another-react-lightbox/plugins/zoom";
+// import "yet-another-react-lightbox/styles.css";
+
+// const galleryImage = "/images/gallery/Pengantin.webp";
+
+// const Gallery = () => {
+//   const [lightboxOpen, setLightboxOpen] = useState(false);
+
+//   return (
+//     <>
+//       <section className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[138px]">
+//         <div
+//           className="relative w-full flex items-center justify-center"
+//           onClick={() => setLightboxOpen(true)}
+//         >
+//           <Image
+//             src={galleryImage}
+//             alt="Gallery"
+//             width={1200}
+//             height={1600}
+//             sizes="100vw"
+//             className="w-[87.18vw] h-auto object-cover lg:hidden"
+//           />
+//           <Image
+//             src="/images/gallery/PengantinD.webp"
+//             alt="Gallery"
+//             width={1200}
+//             height={1600}
+//             sizes="100vw"
+//             className="w-[1098px] h-auto object-cover hidden lg:block"
+//           />
+//         </div>
+//       </section>
+
+//       <Lightbox
+//         open={lightboxOpen}
+//         close={() => setLightboxOpen(false)}
+//         slides={[{ src: galleryImage }]}
+//         plugins={[Zoom]}
+//         noScroll={{ disabled: true }}
+//       />
+//     </>
+//   );
+// };
+
+// export default Gallery;
 
 // "use client";
 

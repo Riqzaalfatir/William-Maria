@@ -32,7 +32,7 @@ const Rsvp = () => {
 
   return (
     <>
-      <section className="bg[#F9FBFA]">
+      <section id="rsvp" className="bg[#F9FBFA]">
         <div className="pt-[23vw] pb-[24vw] lg:pt-[130px] lg:pb-[120px]">
           <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] flex justify-center [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.5px_#51483F]">
             RSVP
