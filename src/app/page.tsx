@@ -58,7 +58,7 @@ export default function Home() {
         <Faq />
 
         <div className="relative w-full">
-          <div className="sticky top-0 h-svh -z-10 -mb-[100svh]">
+          <div className="sticky top-0 h-dvh -z-10 -mb-[100dvh]">
             <ResponsiveVideo
               ref={videoRef}
               mobileSrc="/video/Wil-Maria-compressed.mp4"
