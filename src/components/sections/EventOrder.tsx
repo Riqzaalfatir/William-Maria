@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animation";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
 const EventOrder = () => {
@@ -16,32 +18,77 @@ const EventOrder = () => {
           />
         </div> */}
         <div className="relative left-1/2 -translate-x-1/2 w-[28.46vw] lg:w-[189px] h-auto">
+        <motion.div
+         variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}>
           <img
             src="/images/eventorder/LogoD.webp"
             alt="Provite Logo"
             className="w-full h-auto"
           />
+          </motion.div>
+
         </div>
 
         <div className="pt-[10.51vw] lg:pt-[45px] flex flex-col items-center justify-center leading-none">
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
+            <motion.h1 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
               HOLY <br className="lg:hidden" />
               MATRIMONY
-            </h1>
-            <p className="pt-[2.5vw] lg:pt-[29px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+            </motion.h1>
+            <motion.p 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[2.5vw] lg:pt-[29px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               <span className="italic">at</span>{" "}
               <span className="font-urw italic">9.00</span> AM
-            </p>
-            <h2 className="pt-[2.2vw] lg:pt-[21px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
+            </motion.p>
+            <motion.h2 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[2.2vw] lg:pt-[21px] font-duende text-[10.77vw] lg:text-[64px] text-[#51483F]">
               Putting Garden
-            </h2>
-            <p className="pt-[3.5vw] lg:pt-[19px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
+            </motion.h2>
+            <motion.p 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[3.5vw] lg:pt-[19px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071]">
               DRESS CODE
-            </p>
-            <p className="pt-[0.7vw] lg:pt-[6px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[23px]">
+            </motion.p>
+            <motion.p 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[0.7vw] lg:pt-[6px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.87vw] lg:leading-[23px]">
               Neutral Colors <br />( No Batik )
-            </p>
+            </motion.p>
+            <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            >
             <ResponsivePicture
               mobileSrc="/images/eventorder/Dresscode1.webp"
               desktopSrc="/images/eventorder/DresscodeD.png"
@@ -51,29 +98,64 @@ const EventOrder = () => {
               height={92}
               className="mt-[4.87vw] h-auto w-[58.97vw] lg:mt-[23px] lg:w-[308px]"
             />
-            <p className="pt-[3.59vw] lg:pt-[21.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
+            </motion.div>
+            <motion.p 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[3.59vw] lg:pt-[21.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#717071]">
               don’t forget your sunnies!
-            </p>
+            </motion.p>
           </div>
 
           <div className="pt-[15.90vw] lg:pt-[62px] flex flex-col items-center text-center justify-center leading-none">
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide lg:tracking-normal [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
+            <motion.h1 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide lg:tracking-normal [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
               DINNER <br className="lg:hidden" />
               RECEPTION
-            </h1>
-            <p className="pt-[2.5vw] lg:pt-[31px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
+            </motion.h1>
+            <motion.p 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[2.5vw] lg:pt-[31px] font-athelas text-[3.59vw] lg:text-[20px] text-[#717071] tracking-wide">
               <span className="italic">at</span>{" "}
               <span className="font-urw italic">6.00</span> PM
-            </p>
-            <p className="pt-[2.8vw] lg:pt-[18px] font-athelas text-[3.59vw] lg:text-[14px] text-[#717071] tracking-wide">
+            </motion.p>
+            <motion.p 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}className="pt-[2.8vw] lg:pt-[18px] font-athelas text-[3.59vw] lg:text-[14px] text-[#717071] tracking-wide">
               GRAND BALLROOM
-            </p>
-            <h2 className="pt-[1.3vw] lg:pt-[2px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
+            </motion.p>
+            <motion.h2 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[1.3vw] lg:pt-[2px] font-duende text-[10.26vw] lg:text-[64px] text-[#51483F] leading-[7.95vw] lg:leading-none">
               <span>Intercontinental</span>
               <span className="ml-[8px] lg:ml-[10px]">Hotel</span>
               <span className="block lg:inline lg:ml-[10px]">Bandung</span>
-            </h2>
+            </motion.h2>
 
+            <motion.div  variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}>
             <a
               href="https://maps.app.goo.gl/itNvPF8tGYZR4Whq9"
               target="_blank"
@@ -89,28 +171,53 @@ const EventOrder = () => {
               />
               NAVIGATE TO LOCATION
             </a>
+            </motion.div>
           </div>
 
           <div
             id="dresscode"
             className="pt-[11vw] lg:pt-[65px] flex flex-col items-center text-center justify-center leading-none"
           >
-            <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
+            <motion.h1 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]">
               DRESS CODE
-            </h1>
-            <p className="pt-[3vw] lg:pt-[25px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px] tracking-[3%]">
+            </motion.h1>
+            <motion.p 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[3vw] lg:pt-[25px] font-athelas italic text-[3.08vw] lg:text-[16px] text-[#717071] leading-[3.85vw] lg:leading-[20px] tracking-[3%]">
               We kindly encourage our guest to dress <br />
               as follows on our special day
-            </p>
-            <div className="pt-[7.18vw] lg:pt-[25px] flex flex-col items-center justify-center leading-none">
+            </motion.p>
+            <motion.div 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[7.18vw] lg:pt-[25px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 GENTLEMEN
               </p>
               <p className="pt-[1vw] lg:pt-[1.5px] font-athelas italic text-[3.59vw] lg:text-[18px] text-[#717071] leading-[4.62vw] lg:leading-[23px]">
                 Black Suits & Tie <br />( No Batik )
               </p>
-            </div>
-            <div className="pt-[4vw] lg:pt-[16px] flex flex-col items-center justify-center leading-none">
+            </motion.div>
+            <motion.div 
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            className="pt-[4vw] lg:pt-[16px] flex flex-col items-center justify-center leading-none">
               <p className="font-athelas text-[4.62vw] lg:text-[24px] text-[#717071]">
                 WOMAN
               </p>
@@ -118,7 +225,15 @@ const EventOrder = () => {
                 Formal Long Dresses <br />
                 in Shades of Navy or Black
               </p>
-            </div>
+            </motion.div>
+
+            <motion.div
+             variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
+            >
             <ResponsivePicture
               mobileSrc="/images/eventorder/Dresscode2.webp"
               desktopSrc="/images/eventorder/DCHBD.png"
@@ -128,6 +243,7 @@ const EventOrder = () => {
               height={92}
               className="mt-[5.13vw] h-auto w-[23.59vw] lg:mt-[23px] lg:w-[172px]"
             />
+            </motion.div>
           </div>
         </div>
       </div>

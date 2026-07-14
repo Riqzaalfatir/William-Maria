@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import NotifModal from "@/components/popup/NotifModal";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animation";
 
 type Pilihan = "hadir" | "maybe" | "tidak_hadir" | null;
 type ModalType = string | null;
@@ -34,22 +36,57 @@ const Rsvp = () => {
     <>
       <section id="rsvp" className="bg[#F4F4F5]">
         <div className="pt-[23vw] pb-[24vw] lg:pt-[130px] lg:pb-[120px]">
-          <h1 className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] flex justify-center [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.7px_#51483F]">
+          <motion.h1
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+            className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] flex justify-center [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.7px_#51483F]"
+          >
             RSVP
-          </h1>
+          </motion.h1>
           <div className="flex flex-col items-center text-center justify-center leading-none">
-            <p className="pt-[1.4vw] lg:pt-[18px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F] tracking-[2%]">
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[1.4vw] lg:pt-[18px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F] tracking-[2%]"
+            >
               Mr./Mrs./Ms.
-            </p>
-            <p className="pt-[1.6vw] lg:pt-[10px] font-athelas font-bold text-[4.10vw] lg:text-[20px] text-[#51483F]  break-words max-w-[90%] tracking-[2%]">
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[1.6vw] lg:pt-[10px] font-athelas font-bold text-[4.10vw] lg:text-[20px] text-[#51483F]  break-words max-w-[90%] tracking-[2%]"
+            >
               NAMA & PARTNER
-            </p>
-            <p className="pt-[5.2vw] lg:pt-[17.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[23px] tracking-[2%]">
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[5.2vw] lg:pt-[17.5px] font-athelas italic text-[3.08vw] lg:text-[18px] text-[#51483F] leading-[3.85vw] lg:leading-[23px] tracking-[2%]"
+            >
               Please confirm your attendance before <br />
               <span className="font-bold">Sunday, 16 August 2026</span>
-            </p>
+            </motion.p>
 
-            <div className="pt-[4.62vw] lg:pt-[29px] flex items-center justify-center gap-[2.05vw] lg:gap-[11.52px]">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[4.62vw] lg:pt-[29px] flex items-center justify-center gap-[2.05vw] lg:gap-[11.52px]"
+            >
               <button
                 onClick={() => setPilihan(pilihan === "hadir" ? null : "hadir")}
                 className={`h-[5.13vw] w-[18.97vw] lg:h-[30px] lg:w-[113px] flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] transition-colors duration-200 ${
@@ -84,40 +121,70 @@ const Rsvp = () => {
               >
                 UNABLE TO ATTEND
               </button>
-            </div>
+            </motion.div>
 
-            <p className="pt-[11.5vw] lg:pt-[70px] font-athelas text-[3.08vw] lg:text-[18px] text-[#51483F]">
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[11.5vw] lg:pt-[70px] font-athelas text-[3.08vw] lg:text-[18px] text-[#51483F]"
+            >
               {pilihan === "tidak_hadir"
                 ? "ARE YOU SURE?"
                 : "Confirm your selection?"}
-            </p>
+            </motion.p>
 
-            <button
-              onClick={handleConfirm}
-              className="h-[5.3vw] w-[38.21vw] lg:h-[31px] lg:w-[214px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[4.87vw] lg:mt-[32px]"
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
             >
-              CONFIRM
-            </button>
+              <button
+                onClick={handleConfirm}
+                className="h-[5.3vw] w-[38.21vw] lg:h-[31px] lg:w-[214px] bg-[#878787] hover:bg-[#51483F] active:scale-95 transition-all duration-200 text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] lg:text-[18px] lg:rounded-[7px] mt-[4.87vw] lg:mt-[32px]"
+              >
+                CONFIRM
+              </button>
+            </motion.div>
 
-            <p className="pt-[6.8vw] lg:pt-[41px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]">
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              className="pt-[6.8vw] lg:pt-[41px] font-athelas italic text-[2.56vw] lg:text-[16px] text-[#51483F]"
+            >
               having trouble with RSVP?
-            </p>
+            </motion.p>
 
-            <a
-              href="https://wa.me/6281234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-[5.5vw] w-[38.21vw] lg:h-[30px] lg:w-[214px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[1.28vw] lg:gap-[7px] lg:text-[18px] lg:rounded-[7px] mt-[5.6vw] lg:mt-[35px] transition-colors duration-200"
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
             >
-              <Image
-                src="/images/rsvp/Wa.png"
-                alt="Logo Wa"
-                width={550}
-                height={550}
-                className="object-contain w-[3.33vw] h-[3.33vw] lg:w-[19px] lg:h-[19px] tracking-wide"
-              />
-              CHAT SUPPORT
-            </a>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-[5.5vw] w-[38.21vw] lg:h-[30px] lg:w-[214px] bg-[#12877B] hover:bg-[#0F6B61] text-white flex items-center justify-center font-athelas text-[3.08vw] rounded-[5px] gap-[1.28vw] lg:gap-[7px] lg:text-[18px] lg:rounded-[7px] mt-[5.6vw] lg:mt-[35px] transition-colors duration-200"
+              >
+                <Image
+                  src="/images/rsvp/Wa.png"
+                  alt="Logo Wa"
+                  width={550}
+                  height={550}
+                  className="object-contain w-[3.33vw] h-[3.33vw] lg:w-[19px] lg:h-[19px] tracking-wide"
+                />
+                CHAT SUPPORT
+              </a>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { faqData } from "../data/faq";
 import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animation";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState<string | null>(null);
@@ -34,13 +35,11 @@ const Faq = () => {
       <section id="faq" className="w-full bg[#F4F4F5]">
         <div className="max-w-[311px] lg:max-w-[565px] mx-auto pb-[93px] lg:pt-[40px] lg:pb-[120px]">
           <motion.h2
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1.5,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+            variants={fadeUp}
+                          initial="hidden"
+                          whileInView="show"
+                          viewport={{ once: true, amount: 0.3 }}
+                          transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
             className="uppercase text-center text-[#51483F] font-averne text-[32px] md:text-[46px] lg:text-[48px] -mb-[5px] lg:-mb-[20px] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.7px_#51483F]"
           >
             FAQ
@@ -49,31 +48,23 @@ const Faq = () => {
           <div className=" lg:max-h-none  lg:overflow-visible">
             {/* RENDER FAQ */}
             {faqData.map((section, sIndex) => (
-              <div key={sIndex} className="mt-[15px] lg:mt-[30px]">
+              <motion.div 
+              variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+              key={sIndex} className="mt-[15px] lg:mt-[30px]">
                 {/* JUDUL FAQ */}
-                <motion.h3
-                  initial={{ opacity: 0, y: 80 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 1.5,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: 0.2,
-                  }}
+                <h3
+                
                   className="text-center text-[#51483F] font-athelas text-[16px] md:text-[22px] lg:text-[24px] uppercase tracking-[4%]"
                 >
                   {section.judul}
-                </motion.h3>
+                </h3>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 80 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 1.5,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: 0.3,
-                  }}
+                <div
+                
                   className="border-t border-t-[1px] border-[#707071] mt-[12px] lg:mt-[35px]"
                 >
                   {section.items.map((item, iIndex) => {
@@ -81,15 +72,8 @@ const Faq = () => {
                     const isOpen = openIndex === key;
 
                     return (
-                      <motion.div
-                        initial={{ opacity: 0, y: 80 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{
-                          duration: 1.5,
-                          ease: [0.22, 1, 0.36, 1],
-                          delay: 0.4,
-                        }}
+                      <div
+                       
                         key={key}
                         className="border-[#707071] border-b-[1px]"
                       >
@@ -107,7 +91,9 @@ const Faq = () => {
                         </button>
 
                         {isOpen && (
-                          <div className="pb-3 lg:pb-6 space-y-3 lg:space-y-4 max-w-[292px] lg:max-w-[520px]">
+                          <div 
+                          
+                          className="pb-3 lg:pb-6 space-y-3 lg:space-y-4 max-w-[292px] lg:max-w-[520px]">
                             {item.jawaban.map((paragraf, pIndex) => (
                               <p
                                 key={pIndex}
@@ -118,11 +104,11 @@ const Faq = () => {
                             ))}
                           </div>
                         )}
-                      </motion.div>
+                      </div>
                     );
                   })}
-                </motion.div>
-              </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

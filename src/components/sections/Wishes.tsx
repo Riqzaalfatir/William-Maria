@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import WishesCard from "@/components/popup/WishesCard";
 import NotifModal from "@/components/popup/NotifModal";
+import { motion } from "framer-motion";
+import { fadeUp } from "@/lib/animation";
 
 type PesanItem = {
   id: number;
@@ -57,12 +59,24 @@ const Wishes = () => {
         id="wishes"
         className="w-full flex flex-col items-center pt-[26vw] pb-[18.72vw] lg:pt-[124px] lg:pb-[25px] leading-none"
       >
-        <h2 className="font-averne text-[8.21vw] lg:text-[48px] text-white">
+        <motion.h2 
+        variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+        className="font-averne text-[8.21vw] lg:text-[48px] text-white">
           YOUR WISHES
-        </h2>
+        </motion.h2>
 
         <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.5vw] lg:mt-[28px]">
           <div className="flex flex-col gap-[20px]">
+            <motion.div
+            variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}>
             <input
               type="text"
               value={nama}
@@ -70,13 +84,27 @@ const Wishes = () => {
               onChange={(e) => setNama(e.target.value)}
               className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[2.56vw] lg:px-[15px] h-[8.46vw] lg:h-[40px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
+            </motion.div>
 
+                <motion.div
+            variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}>
             <textarea
               value={pesan}
               onChange={(e) => setPesan(e.target.value)}
               className="w-full text-[#51483F] font-athelas text-[3.08vw] lg:text-[14.5px] bg-[#F9FBFA] border border-white px-[2.56vw] lg:px-[15px] py-[1.28vw] lg:py-[10px] h-[28.97vw] lg:h-[140px] rounded-[5px] lg:rounded-[7px] outline-none placeholder:text-[#51483F]/50"
             />
+            </motion.div>
 
+             <motion.div
+            variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}>
             <button
               onClick={handleSubmit}
               className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-2 text-[#FFFFFF]"
@@ -90,8 +118,13 @@ const Wishes = () => {
               />
               Send
             </button>
+            </motion.div>
 
-            <div
+            <motion.div variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
               className={`w-full rounded-[5px] lg:rounded-[7px] h-[81.79vw] lg:h-[380px] overflow-y-auto scrollbar-hide ${
                 showAll ? "bg-transparent rounded-none" : "bg-[#535353]"
               }`}
@@ -177,13 +210,19 @@ const Wishes = () => {
                   </div>
                 </div>
               )}
-            </div>
+            </motion.div>
 
             <WishesCard
               data={selectedMessage}
               onClose={() => setSelectedMessage(null)}
             />
 
+            <motion.div
+             variants={fadeUp}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}>
             <button
               onClick={() => setShowAll(!showAll)}
               className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-2 lg:gap-[10px] text-white tracking-widest"
@@ -197,6 +236,8 @@ const Wishes = () => {
               />
               {showAll ? "BACK" : "VIEW ALL MESSAGES"}
             </button>
+            </motion.div>
+
           </div>
         </div>
         {showPopup && (

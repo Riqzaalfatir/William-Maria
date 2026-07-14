@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { fadeUp } from "@/lib/animation";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
@@ -30,14 +31,14 @@ const Quote = () => {
       className="flex flex-col items-center -mt-[35px] lg:mt-[20px]"
     >
       <ResponsivePicture
-    mobileSrc="/images/quote/Item.webp"
-    desktopSrc="/images/quote/Item1D.svg"
-    alt="William"
-    width={247}
-    height={92}
-    fill={false}
-    className="h-auto w-[248px] lg:w-[620px] ml-[0px]"
-  />
+        mobileSrc="/images/quote/Item.webp"
+        desktopSrc="/images/quote/Item1D.svg"
+        alt="William"
+        width={247}
+        height={92}
+        fill={false}
+        className="h-auto w-[248px] lg:w-[620px] ml-[0px]"
+      />
       <div className="flex items-start justify-center gap-[29px] -ml-[4.5px] lg:gap-[65px] lg:-ml-[16px] mt-[5px] lg:mt-[20px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">26</p>
@@ -66,7 +67,7 @@ const Quote = () => {
             ( 9.1.22 to 19.9.26 )<br />
             <span className="inline-block font-athelas text-[6.72px] lg:text-[18px] lg:leading-[20px] lg:mt-[8px]">
               The day love is sealed <br />
-in marriage
+              in marriage
             </span>
           </p>
         </div>
@@ -78,15 +79,15 @@ in marriage
       key="features"
       className="flex flex-col items-center -mt-[10px] lg:mt-[70px]"
     >
-       <ResponsivePicture
-    mobileSrc="/images/quote/Item2.webp"
-    desktopSrc="/images/quote/Item2D.svg"
-    alt="William"
-    width={447}
-    height={42}
-    fill={false}
-    className="h-auto w-[150px] lg:w-[410px]"
-  />
+      <ResponsivePicture
+        mobileSrc="/images/quote/Item2.webp"
+        desktopSrc="/images/quote/Item2D.svg"
+        alt="William"
+        width={447}
+        height={42}
+        fill={false}
+        className="h-auto w-[150px] lg:w-[410px]"
+      />
 
       <div className="flex items-start justify-center gap-[17px] ml-[18px] lg:gap-[70px] lg:ml-[40px] pt-[5px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[17px]">
@@ -157,11 +158,23 @@ in marriage
         <div className="absolute inset-0 bg-[#C3D9E6]/[13%] pointer-events-none" />
 
         <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[103px] lg:pb-[155px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
-          <p className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-[6%] [-webkit-text-stroke:0.2px_#FFFFFF] lg:[-webkit-text-stroke:0.5px_#FFFFFF]">
+          <motion.p 
+           variants={fadeUp}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+          className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-[6%] [-webkit-text-stroke:0.2px_#FFFFFF] lg:[-webkit-text-stroke:0.5px_#FFFFFF]">
             GOD KNEW OUR HEARTS NEED EACH OTHER
-          </p>
+          </motion.p>
 
-          <div className="relative w-full flex items-center justify-center h-[15vw] lg:min-h-[180px]">
+          <motion.div 
+           variants={fadeUp}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
+          className="relative w-full flex items-center justify-center h-[15vw] lg:min-h-[180px]">
             <AnimatePresence
               initial={false}
               custom={direction}
@@ -183,7 +196,7 @@ in marriage
                 {slides[index]}
               </motion.div>
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
