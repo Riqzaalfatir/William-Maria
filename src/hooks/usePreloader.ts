@@ -12,7 +12,7 @@ const IMAGES_MOBILE = [
   "/images/gallery/Pengantin.webp",
   "/images/quote/Bg-Quotee.webp",
   "/images/quote/Item.webp",
-  "/images/quote/Item2.webp"
+  "/images/quote/Item2.webp",
 ];
 
 const IMAGES_DESKTOP = [
@@ -23,7 +23,7 @@ const IMAGES_DESKTOP = [
   "/images/gallery/PengantinD.webp",
   "/images/quote/Quote.webp",
   "/images/quote/Item1D.svg",
-  "/images/quote/Item2D.svg"
+  "/images/quote/Item2D.svg",
 ];
 
 const IMAGES_COMMON = [
@@ -34,7 +34,7 @@ const IMAGES_COMMON = [
   "/images/eventorder/LogoD.webp",
   "/images/popup/TandaCeklisBg.svg",
   "/images/popup/TandaSeru.svg",
-  "/images/popup/TandaTanya.svg"
+  "/images/popup/TandaTanya.svg",
 ];
 
 const VIDEO_MOBILE = "/video/Wil-Maria-compressed.mp4";

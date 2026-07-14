@@ -1,4 +1,3 @@
-// src/hooks/ResponsiveVideo.tsx
 "use client";
 
 import { useSyncExternalStore, forwardRef } from "react";

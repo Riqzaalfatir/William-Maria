@@ -53,7 +53,7 @@ const Rsvp = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
-              className="pt-[1.4vw] lg:pt-[18px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F] tracking-[2%]"
+              className="pt-[1.4vw] lg:pt-[18px] font-athelas font-bold italic text-[3.08vw] lg:text-[16px] text-[#51483F] tracking-[2%] break-words px-6 max-w-full lg:max-w-[350px] lg:px-0"
             >
               Mr./Mrs./Ms.
             </motion.p>
@@ -202,91 +202,3 @@ const Rsvp = () => {
 };
 
 export default Rsvp;
-
-// KONSEP NO LOGIC
-// import React from "react";
-// import Image from "next/image";
-
-// const Rsvp = () => {
-//   return (
-//     <section className="bg-[#F4F4F5]">
-//       <div className="pt-[100px] pb-[100px]">
-//         <h1 className="font-averne text-[32px] text-[#51483F] flex justify-center">
-//           RSVP
-//         </h1>
-//         <div className="flex flex-col items-center text-center justify-center leading-none">
-//           <p className="pt-[18px] font-athelas font-bold italic text-[12px] text-[#51483F]">
-//             Mr./Mrs./Ms.
-//           </p>
-//           <p className="pt-[6px] font-athelas font-bold text-[16px] text-[#51483F]">
-//             NAMA & PARTNER
-//           </p>
-//           <p className="pt-[18px] font-athelas italic text-[12px] text-[#51483F] leading-[20px]">
-//             Please confirm your attendance before <br />
-//             <span className="font-bold">Sunday, 16 August 2026</span>
-//           </p>
-
-//           <div className="pt-[18px]  flex items-center justify-center gap-[8px]">
-//             <a
-//               href="#"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="h-[20px] w-[74px] bg-[#878787] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px]"
-//             >
-//               ATTEND
-//             </a>
-//             <a
-//               href="#"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="h-[20px] w-[74px] border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px]"
-//             >
-//               MAYBE
-//             </a>
-//             <a
-//               href="#"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="h-[20px] w-[135px] border border-[0.5px] border-[#878787] bg-[#E2DEDF] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px]"
-//             >
-//               UNABLE TO ATTEND
-//             </a>
-//           </div>
-
-//           <p className="pt-[43px] font-athelas text-[12px] text-[#51483F]">
-//             ARE YOU SURE?
-//           </p>
-
-//           <a
-//             href="#"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="h-[20px] w-[149px] bg-[#878787] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px] mt-[13px]"
-//           >
-//             CONFIRM
-//           </a>
-//           <p className="pt-[24px] font-athelas italic text-[10px] text-[#51483F]">
-//             having trouble with RSVP?
-//           </p>
-//           <a
-//             href="#"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="h-[24px] w-[149px] bg-[#12877B] text-white flex items-center justify-center font-athelas text-[12px] rounded-[5px] gap-[5px] mt-[20px] "
-//           >
-//             <Image
-//               src="/images/rsvp/Wa.png"
-//               alt="Logo Wa"
-//               width={550}
-//               height={550}
-//               className="object-contain w-[13px] h-[13px]"
-//             />
-//             CHAT SUPPORT
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Rsvp;
