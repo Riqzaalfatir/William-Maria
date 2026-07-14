@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 export const athelas = localFont({
   src: [
     {
-      path: "../public/fonts/athelas/Athelas-Regular.ttf",
+      path: "../public/fonts/athelas/Athelas Regular.ttf",
       weight: "400",
       style: "normal",
     },

@@ -79,7 +79,7 @@ const Wishes = () => {
 
             <button
               onClick={handleSubmit}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-1.5 text-[#FFFFFF] tracking-wide"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-1.5 lg:gap-2 text-[#FFFFFF]"
             >
               <Image
                 src="/images/wishes/Panah.png"
@@ -100,19 +100,19 @@ const Wishes = () => {
                 <div>
                   <div className="sticky top-0 w-full h-[3.08vw] lg:h-[15px] bg-[#535353] z-10" />
 
-                  <div className="px-[2.56vw] lg:px-[26px]">
+                  <div className="px-[3.2vw] lg:px-[26px]">
                     {pesanList.map((item, index, array) => (
                       <div key={item.id}>
-                        <p className="text-white font-athelas text-[3.08vw] mb-[2.56vw] lg:text-[14.5px] lg:mb-[12px]">
+                        <p className="text-white font-athelas text-[3.08vw] mb-[2.56vw] lg:text-[14.5px] lg:mb-[9px] font-bold">
                           {item.nama}
                         </p>
 
-                        <p className="text-white font-athelas text-[3.08vw] lg:text-[14.5px] tracking-wide mb-[3.33vw] lg:mb-[16px] break-words leading-[3.33vw] lg:leading-[18.24px]">
+                        <p className="text-white font-athelas text-[3vw] lg:text-[14px] tracking-wide mb-[3.1vw] lg:mb-[9px] break-words leading-[15px] lg:leading-[18.24px]">
                           {item.pesan}
                         </p>
 
                         {index !== array.length - 1 && (
-                          <div className="border-t border-white mb-[3.85vw] lg:mb-[19px]" />
+                          <div className="border-t border-white mb-[4.7vw] lg:mb-[19px]" />
                         )}
                       </div>
                     ))}
@@ -186,7 +186,7 @@ const Wishes = () => {
 
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-2 text-white tracking-widest"
+              className="bg-[#535353] hover:bg-[#51483F] active:scale-95 transition-all duration-200 w-full rounded-[5px] lg:rounded-[7px] h-[8.46vw] lg:h-[40px] text-[3.08vw] lg:text-[14.5px] font-athelas uppercase flex items-center justify-center gap-2 lg:gap-[10px] text-white tracking-widest"
             >
               <Image
                 src="/images/wishes/Pesan.png"

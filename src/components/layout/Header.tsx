@@ -19,6 +19,7 @@ const Header = () => {
     { name: "DRESS CODE", link: "#dresscode" },
     { name: "GALLERY", link: "#gallery" },
     { name: "RSVP", link: "#rsvp" },
+    { name: "FAQ", link: "#faq" },
     { name: "WISHES", link: "#wishes" },
   ];
 

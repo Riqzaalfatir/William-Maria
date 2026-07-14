@@ -8,6 +8,8 @@ html, body {
   overscroll-behavior-y: contain;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  
+  
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {

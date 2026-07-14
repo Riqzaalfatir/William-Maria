@@ -5,14 +5,14 @@ import ResponsivePicture from "@/hooks/ResponsivePicture"; // sesuaikan path ses
 const Profile = () => {
   return (
     <section id="profile">
-      <div className="relative w-full bg[#F9FBFA] lg:min-h-[944px]">
-       <ResponsivePicture
-  mobileSrc="/images/profile/Layer-BM.png"
-  desktopSrc="/images/profile/LayerBunga2.webp"
-  alt="Nicholas & Clara"
-  className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-  unoptimized
-/>
+      <div className="relative w-full bg-[#F4F4F5] lg:min-h-[944px]">
+        <ResponsivePicture
+          mobileSrc="/images/profile/Layer-BM.png"
+          desktopSrc="/images/profile/LayerBunga3.webp"
+          alt="Nicholas & Clara"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          unoptimized
+        />
         {/* pt mobile 26.04 */}
         <div className="relative pt-[25.5vw] pb-[25.64vw] lg:pt-[146px] lg:pb-[145px] flex flex-col items-center justify-center leading-none">
           <div className="flex flex-col items-center text-center justify-center leading-none">
@@ -34,7 +34,7 @@ const Profile = () => {
             Cordially invite you to celebrate the wedding reception of
           </p>
 
-          <div className="pt-[1.79vw] lg:pt-[33px]  flex flex-col items-center text-center justify-center leading-none">
+          <div className="pt-[1.79vw] lg:pt-[32px]  flex flex-col items-center text-center justify-center leading-none lg:-ml-[8px]">
             <div className="flex flex-col items-center text-center justify-center leading-none">
               <Image
                 src="/images/profile/William.webp"
@@ -44,7 +44,10 @@ const Profile = () => {
                 className="h-auto w-[63.33vw] lg:w-[291px]"
                 unoptimized
               />
-              <h3 className="-mt-[2.7vw]  lg:-mt-[17px] -ml-[4px] lg:ml-[15px] lg:pl-[22px] font-averne font-medium text-[4.62vw] lg:text-[24px] text-[#50473F] tracking-[3%]" style={{ WebkitTextStroke: "0.3px #51483F" }}>
+              <h3
+                className="-mt-[2.7vw]  lg:-mt-[17px] ml-[3px] lg:ml-[15px] lg:pl-[22px] font-averne font-medium text-[4.62vw] lg:text-[24px] text-[#50473F] tracking-[3%]"
+                style={{ WebkitTextStroke: "0.3px #51483F" }}
+              >
                 CHRISTIAN TANUDJAJA
               </h3>
             </div>
@@ -57,14 +60,19 @@ const Profile = () => {
                 height={92}
                 className="pt-[0vw] lg:pt-[11px] h-auto w-[63.33vw] lg:w-[291px]"
               />
-              <h3 className="-mt-[5.5vw] lg:pt-[58px] font-averne text-[4.62vw] lg:text-[24px] text-[#50473F] tracking-[3%]" style={{ WebkitTextStroke: "0.3px #51483F" }}>
+              <h3
+                className="-mt-[5.5vw] lg:pt-[58px] font-averne text-[4.62vw] lg:text-[24px] text-[#50473F] tracking-[3%]"
+                style={{ WebkitTextStroke: "0.3px #51483F" }}
+              >
                 LAWRENA
               </h3>
             </div>
           </div>
+          
           <div className="pt-[7.44vw] lg:pt-[35px] flex flex-col items-center text-center justify-center leading-none">
             <p className="font-athelas text-[3.08vw] lg:text-[18.55px] text-[#717071] tracking-[2%]">
-              SATURDAY, <span className="font-urw">19</span> SEPTEMBER <span className="font-urw">2026</span>
+              SATURDAY, <span className="font-urw">19</span> SEPTEMBER{" "}
+              <span className="font-urw">2026</span>
             </p>
             <p className="pt-[4.1vw] lg:pt-[22px] font-athelas text-[3.08vw] lg:text-[19.88px] text-[#717071] leading-[4.10vw] lg:leading-[23px] tracking-[2%]">
               INTERCONTINENTAL HOTEL BANDUNG <br />
@@ -84,7 +92,6 @@ const Profile = () => {
 };
 
 export default Profile;
-
 
 // SEBELUM DI BERIKAN LOGIC DOWNLOAD
 // import React from "react";
@@ -175,8 +182,6 @@ export default Profile;
 // };
 
 // export default Profile;
-
-
 
 // SUDAH FIX TAPI MASIH PX
 // import React from "react";

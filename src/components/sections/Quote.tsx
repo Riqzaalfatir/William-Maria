@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
-
 const Quote = () => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -13,53 +12,61 @@ const Quote = () => {
     // Slide 1 - Quote paragraph
     <p
       key="paragraph"
-      className="font-athelas text-[2.56vw] lg:text-[20px] text-white leading-[3.85vw] lg:leading-[34px]"
+      className="font-athelas lg:font-urw lg:pt-[72px] text-[2.56vw] lg:text-[20px] text-white leading-[3.85vw] lg:leading-[34px] tracking-[2%] lg:tracking-[0%]"
     >
-      With joyful hearts and hopeful eyes, we’re stepping <br className="lg:hidden" />
+      With joyful hearts and hopeful eyes, we’re stepping{" "}
+      <br className="lg:hidden" />
       into the next chapter. <br className="hidden lg:block" />
-       This wedding isn’t just a celebration of a
-      day - <br className="lg:hidden" />
-      it’s a celebration of a journey, <br className="hidden lg:block" />
-       a promise, and the love we’re lucky{" "}
-      <br />
+      This wedding isn’t just a celebration of a day -{" "}
+      <br className="lg:hidden" />
+      it’s a celebration of a journey, <br className="hidden lg:block" />a
+      promise, and the love we’re lucky <br />
       enough to call our own
     </p>,
 
     // Slide 2 - Numbers
-    <div key="numbers" className="flex flex-col items-center -mt-[35px] lg:mt-[30px]">
-      <Image
-        src="/images/quote/Item.webp"
-        alt="William"
-        width={247}
-        height={92}
-        className="h-auto w-[248px] lg:w-[620px] ml-[0px]"
-      />
-
-      <div className="flex items-start justify-center gap-[29px] -ml-[4.5px] lg:gap-[45px] lg:-ml-[25px] mt-[5px] lg:mt-[15px]">
+    <div
+      key="numbers"
+      className="flex flex-col items-center -mt-[35px] lg:mt-[20px]"
+    >
+      <ResponsivePicture
+    mobileSrc="/images/quote/Item.webp"
+    desktopSrc="/images/quote/Item1D.svg"
+    alt="William"
+    width={247}
+    height={92}
+    fill={false}
+    className="h-auto w-[248px] lg:w-[620px] ml-[0px]"
+  />
+      <div className="flex items-start justify-center gap-[29px] -ml-[4.5px] lg:gap-[65px] lg:-ml-[16px] mt-[5px] lg:mt-[20px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">26</p>
-          <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[12px] lg:leading-[26px]">
+          <p className="text-[5.97px] lg:text-[18px] text-white font-urw leading-[12px] lg:leading-[26px]">
             ( 26.12.21 ) <br />
-            <span className="text-[6.72px] lg:text-[20px]">William declared his love</span>
+            <span className="font-athelas text-[6.72px] lg:text-[18px]">
+              William declared his love
+            </span>
           </p>
         </div>
         <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px]">
           <p className="font-urw text-[7.46px] lg:text-[20px] text-white">9</p>
-          <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[8.96px] lg:leading-[26px]">
+          <p className="text-[5.97px] lg:text-[18px] text-white font-urw leading-[8.96px] lg:leading-[20px]">
             ( 9.1.22 ) <br />
-            <span className="text-[6.72px] lg:text-[20px] lg:leading-[20px]">
+            <span className="inline-block font-athelas text-[6.72px] lg:text-[18px] lg:leading-[20px] lg:mt-[8px]">
               The true beginning, <br />
               When hearts aligned
             </span>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px] ml-[7px] lg:ml-[15px]">
-          <p className="font-urw text-[7.46px] lg:text-[20px] text-white">9,1,26</p>
-          <p className="text-[5.97px] lg:text-[18px] text-white font-athelas leading-[8.96px] lg:leading-[26px]">
+        <div className="flex flex-col items-center justify-center leading-none gap-[1px] lg:gap-[20px] ml-[7px] lg:ml-[10px]">
+          <p className="font-urw text-[7.46px] lg:text-[20px] text-white">
+            9,1,26
+          </p>
+          <p className="text-[5.97px] lg:text-[18px] text-white font-urw leading-[8.96px] lg:leading-[20px]">
             ( 9.1.22 to 19.9.26 )<br />
-            <span className="text-[6.72px] lg:text-[20px] lg:leading-[20px]">
-              The true beginning, <br />
-              When hearts aligned
+            <span className="inline-block font-athelas text-[6.72px] lg:text-[18px] lg:leading-[20px] lg:mt-[8px]">
+              The day love is sealed <br />
+in marriage
             </span>
           </p>
         </div>
@@ -67,26 +74,35 @@ const Quote = () => {
     </div>,
 
     // Slide 3 - Features
-    <div key="features" className="flex flex-col items-center -mt-[10px] lg:mt-[80px]">
-      <Image
-        src="/images/quote/Item2.webp"
-        alt="William"
-        width={247}
-        height={92}
-        className="h-auto w-[150px] lg:w-[380px]"
-      />
+    <div
+      key="features"
+      className="flex flex-col items-center -mt-[10px] lg:mt-[70px]"
+    >
+       <ResponsivePicture
+    mobileSrc="/images/quote/Item2.webp"
+    desktopSrc="/images/quote/Item2D.svg"
+    alt="William"
+    width={447}
+    height={42}
+    fill={false}
+    className="h-auto w-[150px] lg:w-[410px]"
+  />
 
-      <div className="flex items-start justify-center gap-[17px] ml-[18px] lg:gap-[45px] lg:ml-[50px] pt-[5px]">
+      <div className="flex items-start justify-center gap-[17px] ml-[18px] lg:gap-[70px] lg:ml-[40px] pt-[5px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[17px]">
-          <p className="font-athelas text-[8px] lg:text-[20px] text-white">UPWARD FLOW</p>
-          <p className="text-[6px] lg:text-[18px] text-white font-athelas leading-[7px] lg:leading-[20px] tracking-wide">
+          <p className="font-athelas text-[8px] lg:text-[20px] text-white">
+            UPWARD FLOW
+          </p>
+          <p className="text-[6px] lg:text-[18px] text-white font-athelas leading-[7px] lg:leading-[20px] tracking-[2%]">
             Love that grows, <br />
             always connected
           </p>
         </div>
         <div className="flex flex-col items-center justify-center leading-none gap-[7px] lg:gap-[17px]">
-          <p className="font-urw text-[8px] lg:text-[20px] text-white">MIRRORED INITIALS</p>
-          <p className="text-[6px] lg:text-[18px] text-white font-athelas leading-[7px] lg:leading-[20px] tracking-wide">
+          <p className="font-urw text-[8px] lg:text-[20px] text-white">
+            MIRRORED INITIALS
+          </p>
+          <p className="text-[6px] lg:text-[18px] text-white font-athelas leading-[7px] lg:leading-[20px] tracking-[2%]">
             Reflect each other, just like the <br />
             mirrors that first brought us <br className="hidden lg:block" />
             together
@@ -104,7 +120,7 @@ const Quote = () => {
 
   const handleDragEnd = (
     _e: MouseEvent | TouchEvent | PointerEvent,
-    info: PanInfo
+    info: PanInfo,
   ) => {
     const swipeThreshold = 50;
     if (info.offset.x < -swipeThreshold) goTo(index + 1);
@@ -125,13 +141,13 @@ const Quote = () => {
     <section>
       <div className="relative w-full">
         <ResponsivePicture
-  mobileSrc="/images/quote/Bg-Quotee.webp"
-  desktopSrc="/images/quote/Quote.webp"
-  alt="Nicholas & Clara"
-  className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-  objectPositionMobile="top"
-  objectPositionDesktop="center"
-/>
+          mobileSrc="/images/quote/Bg-Quotee.webp"
+          desktopSrc="/images/quote/Quote.webp"
+          alt="Nicholas & Clara"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          objectPositionMobile="top"
+          objectPositionDesktop="center"
+        />
         {/* <img
           src="/images/quote/Bg-QuoteD.webp"
           alt="Nicholas & Clara"
@@ -140,13 +156,17 @@ const Quote = () => {
         {/* <div className="absolute inset-0 bg-black/45 pointer-events-none hidden lg:block" /> */}
         <div className="absolute inset-0 bg-[#C3D9E6]/[13%] pointer-events-none" />
 
-        <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[109px] lg:pb-[155px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
-          <p className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-[6%]">
+        <div className="relative pt-[10.51vw] pb-[13.85vw] lg:pt-[103px] lg:pb-[155px] flex flex-col items-center text-center justify-center leading-none gap-[10.5vw] lg:gap-[10px]">
+          <p className="font-averne text-[3.08vw] lg:text-[32px] text-white tracking-[6%] [-webkit-text-stroke:0.2px_#FFFFFF] lg:[-webkit-text-stroke:0.5px_#FFFFFF]">
             GOD KNEW OUR HEARTS NEED EACH OTHER
           </p>
 
           <div className="relative w-full flex items-center justify-center h-[15vw] lg:min-h-[180px]">
-            <AnimatePresence initial={false} custom={direction} mode="popLayout">
+            <AnimatePresence
+              initial={false}
+              custom={direction}
+              mode="popLayout"
+            >
               <motion.div
                 key={index}
                 custom={direction}
@@ -171,22 +191,6 @@ const Quote = () => {
 };
 
 export default Quote;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SEBELUM DIBERIKAN LOGIC DOWNLOAD
 // "use client";
@@ -362,7 +366,6 @@ export default Quote;
 // };
 
 // export default Quote;
-
 
 // NORMAL VERSI TANPA SLIDE
 // import React from "react";

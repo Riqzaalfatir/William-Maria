@@ -9,7 +9,7 @@ const Thankyou = () => {
           <h1 className="font-duende text-[16.41vw] lg:text-[96px] text-white">
             Thank You
           </h1>
-          <p className="pt-[16px] lg:pt-[23px] font-athelas italic text-[3.08vw] lg:text-[18px] text-white leading-[4.10vw] lg:leading-[22px] tracking-wide">
+          <p className="pt-[16px] lg:pt-[23px] font-athelas italic text-[3.08vw] lg:text-[17px] text-white leading-[4.10vw] lg:leading-[22px] tracking-wide">
             Having you with us on our special day would <br />
             make our celebration even more meaningful.
           </p>

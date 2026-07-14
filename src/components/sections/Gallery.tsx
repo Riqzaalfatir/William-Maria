@@ -16,7 +16,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="gallery" className="w-full bg[#F9FBFA] flex justify-center py-[25.64vw] lg:py-[138px]">
+      <section id="gallery" className="w-full bg[#F4F4F5] flex justify-center py-[25.64vw] lg:py-[138px]">
         <div
           className="relative w-full flex items-center justify-center"
           onClick={() => setLightboxOpen(true)}

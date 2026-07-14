@@ -10,14 +10,20 @@ const IMAGES_MOBILE = [
   "/images/profile/Layer-BM.png",
   "/images/pengantin/Sl-Wima.webp",
   "/images/gallery/Pengantin.webp",
+  "/images/quote/Bg-Quotee.webp",
+  "/images/quote/Item.webp",
+  "/images/quote/Item2.webp"
 ];
 
 const IMAGES_DESKTOP = [
   "/images/opening/OpeningBackgroundD.webp",
-  "/images/hero/HeroD.webp",
-  "/images/profile/LayerBunga2.webp",
-  "/images/pengantin/Sl-WIMAD.webp",
+  "/images/hero/PengantinD.webp",
+  "/images/profile/LayerBunga3.webp",
+  "/images/pengantin/SL-WIMAD.webp",
   "/images/gallery/PengantinD.webp",
+  "/images/quote/Quote.webp",
+  "/images/quote/Item1D.svg",
+  "/images/quote/Item2D.svg"
 ];
 
 const IMAGES_COMMON = [
@@ -25,7 +31,10 @@ const IMAGES_COMMON = [
   "/images/hero/Logo-WmD.png",
   "/images/profile/William.webp",
   "/images/profile/Maria.webp",
-  "/images/eventorder/LogoD.webp"
+  "/images/eventorder/LogoD.webp",
+  "/images/popup/TandaCeklisBg.svg",
+  "/images/popup/TandaSeru.svg",
+  "/images/popup/TandaTanya.svg"
 ];
 
 const VIDEO_MOBILE = "/video/Wil-Maria-compressed.mp4";

@@ -10,7 +10,7 @@ type Props = {
   fill?: boolean;
   width?: number;
   height?: number;
-  priority?: boolean;      // ← ini harus ada
+  priority?: boolean;
   unoptimized?: boolean;
 };
 
@@ -24,7 +24,7 @@ const ResponsivePicture = ({
   fill = true,
   width,
   height,
-  priority = false,        // ← ini harus ada, default false
+  priority = false,
   unoptimized = false,
 }: Props) => {
   const baseClassName =
@@ -48,20 +48,23 @@ const ResponsivePicture = ({
     : { alt, width, height, priority, unoptimized };
 
   const {
-    props: { srcSet: desktopSrcSet },
+    props: { srcSet: desktopSrcSet, src: desktopSrcOnly },
   } = getImageProps({ ...common, src: desktopSrc });
   const {
-    props: { srcSet: mobileSrcSet, ...mobileProps },
+    props: { srcSet: mobileSrcSet, src: mobileSrcOnly, ...mobileProps },
   } = getImageProps({ ...common, src: mobileSrc });
 
   return (
     <picture>
-      <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
+      <source
+        media="(min-width: 1024px)"
+        srcSet={desktopSrcSet || desktopSrcOnly}
+      />
       <img
         {...mobileProps}
-        srcSet={mobileSrcSet}
+        srcSet={mobileSrcSet || mobileSrcOnly}
         className={resolvedClassName}
-        style={style}
+        style={{ ...(mobileProps as any).style, ...style }}
       />
     </picture>
   );

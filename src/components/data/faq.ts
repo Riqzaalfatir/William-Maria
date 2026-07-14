@@ -21,10 +21,10 @@ export const faqData: FAQSection[] = [
       {
         pertanyaan: "What is the dress code?",
         jawaban: [
-          "Holy Matrimony (Garden Ceremony)\nFor our Holy Matrimony, we kindly encourage guests to wear neutral or earth-tone colors, such as beige, nude, brown, cream, or similar shades. Comfortable, casual attire with a relaxed resort feel is perfect for the garden setting.\nWe also recommend avoiding high heels, as the ceremony will be held on the lawn. Feel free to wear sunglasses during the ceremony if you'd like.",
-          "Reception (Evening Celebration)\nFor the reception, we kindly encourage ladies to wear a long black or navy evening dress, while gentlemen are requested to wear a formal suit. If you don't have a suit, a black dress shirt with formal trousers is absolutely welcome.",
-          "Kindly Note,\nWe kindly request that guests do not wear batik for both the Holy Matrimony and Reception. Thank you!",
-        ],
+  "Holy Matrimony (Garden Ceremony)\nFor our Holy Matrimony, we kindly encourage guests to wear neutral or earth-tone colors, such as beige, nude, brown, cream, or similar shades. Comfortable, casual attire with a relaxed resort feel is perfect for the garden setting.\n\nWe also recommend avoiding high heels, as the ceremony will be held on the lawn. Feel free to wear sunglasses during the ceremony if you'd like.",
+  "Reception (Evening Celebration)\nFor the reception, we kindly encourage ladies to wear a long black or navy evening dress, while gentlemen are requested to wear a formal suit. If you don't have a suit, a black dress shirt with formal trousers is absolutely welcome.",
+  "Kindly Note,\nWe kindly request that guests do not wear batik for both the Holy Matrimony and Reception. Thank you!",
+],
       },
       {
         pertanyaan: "Where will the Holy Matrimony take place?",
