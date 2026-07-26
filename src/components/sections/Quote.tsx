@@ -182,7 +182,7 @@ const Quote = () => {
         />
         <div className="absolute inset-0 bg-[#C3D9E6]/[13%] pointer-events-none" />
 
-        <div className="relative pt-[10.51vw] pb-[2.4vw] md:pt-[103px] md:pb-[155px] flex flex-col items-center text-center justify-center leading-none gap-[0vw] md:gap-[10px]">
+        <div className="relative pt-[10.51vw] pb-[2.4vw] md:pt-[107px] md:pb-[105px] flex flex-col items-center text-center justify-center leading-none gap-[0vw] md:gap-[0px]">
           <motion.p
             variants={fadeUp}
             initial="hidden"
@@ -201,7 +201,7 @@ const Quote = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
             ref={viewportRef}
-            className="relative w-full overflow-hidden h-[145px] md:h-[220px]"
+            className="relative w-full overflow-hidden h-[145px] md:h-[350px] lg:-mt-[50px]"
           >
             <motion.div
               className="flex w-full h-full"

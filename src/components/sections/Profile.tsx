@@ -66,7 +66,7 @@ const Profile = () => {
           <div className="pt-[1.79vw] lg:pt-[32px]  flex flex-col items-center text-center justify-center leading-none lg:-ml-[8px]">
             <div className="flex flex-col items-center text-center justify-center leading-none">
               <motion.div
-                 variants={popIn}
+                variants={popIn}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}

@@ -11,9 +11,9 @@ import ResponsivePicture from "@/hooks/ResponsivePicture";
 
 const galleryImages = [
   { mobile: "/images/gallery/Pengantin.webp", desktop: "/images/gallery/PengantinD.webp" },
-  { mobile: "/images/gallery/Pengantin2.webp", desktop: "/images/gallery/Pengantin2D.webp" },
-  { mobile: "/images/gallery/Pengantin3.webp", desktop: "/images/gallery/Pengantin3D.webp" },
-  { mobile: "/images/gallery/Pengantin4.webp", desktop: "/images/gallery/Pengantin4D.webp" },
+  { mobile: "/images/gallery/Pengantin2.webp", desktop: "/images/gallery/PengantinD.webp" },
+  { mobile: "/images/gallery/Pengantin3.webp", desktop: "/images/gallery/PengantinD.webp" },
+  { mobile: "/images/gallery/Pengantin4.webp", desktop: "/images/gallery/PengantinD.webp" },
 ];
 
 const AUTO_SLIDE_INTERVAL = 6000; // ms
@@ -92,9 +92,7 @@ const Gallery = () => {
         >
           <div
             ref={viewportRef}
-            className="relative w-[87.18vw] lg:w-[1098px] overflow-hidden"
-            style={{ aspectRatio: "340 / 700" }}
-          >
+            className="relative w-[87.18vw] lg:w-[1098px] overflow-hidden aspect-[340/700] lg:aspect-[1098/746]"          >
             <motion.div
               className="flex h-full"
               style={{ willChange: "transform", touchAction: "pan-y", cursor: "grab" }}
