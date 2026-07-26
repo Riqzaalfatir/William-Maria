@@ -129,14 +129,14 @@ const Quote = () => {
     else if (info.offset.x > swipeThreshold) goTo(index - 1);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setDirection(1);
-  //     setIndex((prev) => (prev + 1) % slides.length);
-  //   }, 4000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDirection(1);
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 4000);
 
-  //   return () => clearInterval(interval);
-  // },  [index, slides.length]); 
+    return () => clearInterval(interval);
+  },  [index, slides.length]); 
 
   return (
     <section>
