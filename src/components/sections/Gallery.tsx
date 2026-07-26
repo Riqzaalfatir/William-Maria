@@ -6,8 +6,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
-import { motion, AnimatePresence } from "framer-motion";
-import { fadeUp } from "@/lib/animation";
+import { motion } from "framer-motion";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
 const galleryImages = [
@@ -17,14 +16,14 @@ const galleryImages = [
   { mobile: "/images/gallery/Pengantin4.webp", desktop: "/images/gallery/Pengantin4D.webp" },
 ];
 
-const AUTO_SLIDE_INTERVAL = 4000; // ms, ganti sesuai kebutuhan
+const AUTO_SLIDE_INTERVAL = 6000; // ms
 
 const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    if (lightboxOpen) return; // pause pas lightbox lagi kebuka
+    if (lightboxOpen) return;
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % galleryImages.length);
     }, AUTO_SLIDE_INTERVAL);
@@ -41,35 +40,29 @@ const Gallery = () => {
           className="relative w-full flex items-center justify-center"
           onClick={() => setLightboxOpen(true)}
         >
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-            className="relative w-[87.18vw] lg:w-[1098px]"
+          <div
+            className="relative w-[87.18vw] lg:w-[1098px] overflow-hidden"
             style={{ aspectRatio: "340 / 700" }}
           >
-            <AnimatePresence>
-              <motion.div
-                key={current}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="absolute inset-0"
-              >
-                <ResponsivePicture
-                  mobileSrc={galleryImages[current].mobile}
-                  desktopSrc={galleryImages[current].desktop}
-                  alt="Gallery"
-                  fill={true}
-                  className="object-cover"
-                  unoptimized
-                />
-              </motion.div>
-            </AnimatePresence>
-          </motion.div>
+            <motion.div
+              animate={{ x: `-${current * 100}%` }}
+              transition={{ duration: 1.2, ease: [0.32, 0.72, 0, 1] }}
+              className="flex h-full"
+              style={{ willChange: "transform" }}
+            >
+              {galleryImages.map((img, i) => (
+                <div key={i} className="relative w-full h-full shrink-0">
+                  <ResponsivePicture
+                    mobileSrc={img.mobile}
+                    desktopSrc={img.desktop}
+                    alt={`Gallery ${i + 1}`}
+                    fill={true}
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </section>
 
