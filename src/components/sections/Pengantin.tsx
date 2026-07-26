@@ -4,7 +4,6 @@ import ResponsivePicture from "@/hooks/ResponsivePicture";
 const Pengantin = () => {
   return (
     <section
-      id="gallery"
       className="relative w-full bgb h-[360px] lg:h-[942px]"
     >
       <ResponsivePicture
