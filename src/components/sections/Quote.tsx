@@ -86,10 +86,10 @@ const Quote = () => {
         width={447}
         height={42}
         fill={false}
-        className="h-auto w-[150px] md:w-[410px]"
+        className="h-auto w-[150px] md:w-[410px] mr-[18px] md:mr-[40px]"
       />
 
-      <div className="flex items-start justify-center gap-[17px] ml-[18px] md:gap-[70px] md:ml-[40px] pt-[5px]">
+      <div className="flex items-start justify-center gap-[17px] md:gap-[70px]  pt-[5px]">
         <div className="flex flex-col items-center justify-center leading-none gap-[7px] md:gap-[17px]">
           <p className="font-athelas text-[8px] md:text-[20px] text-white">
             UPWARD FLOW
@@ -129,14 +129,14 @@ const Quote = () => {
     else if (info.offset.x > swipeThreshold) goTo(index - 1);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDirection(1);
-      setIndex((prev) => (prev + 1) % slides.length);
-    }, 4000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setDirection(1);
+  //     setIndex((prev) => (prev + 1) % slides.length);
+  //   }, 4000);
 
-    return () => clearInterval(interval);
-  },  [index, slides.length]); 
+  //   return () => clearInterval(interval);
+  // },  [index, slides.length]); 
 
   return (
     <section>

@@ -32,7 +32,7 @@ const EventOrder = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
+              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none [-webkit-text-stroke:0.3px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
             >
               HOLY <br className="lg:hidden" />
               MATRIMONY
@@ -114,7 +114,7 @@ const EventOrder = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide lg:tracking-normal [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
+              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] leading-[7.18vw] lg:leading-none tracking-wide lg:tracking-normal [-webkit-text-stroke:0.3px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
             >
               DINNER <br className="lg:hidden" />
               RECEPTION
@@ -188,7 +188,7 @@ const EventOrder = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 3, ease: "easeOut", delay: 0.2 }}
-              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] [-webkit-text-stroke:0.2px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
+              className="font-averne text-[8.21vw] lg:text-[48px] text-[#51483F] [-webkit-text-stroke:0.3px_#51483F] lg:[-webkit-text-stroke:0.8px_#51483F]"
             >
               DRESS CODE
             </motion.h1>

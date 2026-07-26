@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeUp } from "@/lib/animation";
+import { fadeUp, popIn } from "@/lib/animation";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
 const Profile = () => {
@@ -66,11 +66,10 @@ const Profile = () => {
           <div className="pt-[1.79vw] lg:pt-[32px]  flex flex-col items-center text-center justify-center leading-none lg:-ml-[8px]">
             <div className="flex flex-col items-center text-center justify-center leading-none">
               <motion.div
-                variants={fadeUp}
+                 variants={popIn}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
               >
                 <Image
                   src="/images/profile/William.webp"
@@ -91,11 +90,10 @@ const Profile = () => {
 
             <div className="-mt-[0.51vw] flex flex-col items-center text-center justify-center leading-none">
               <motion.div
-                variants={fadeUp}
+                variants={popIn}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 3, ease: "easeOut", delay: 0.3 }}
               >
                 <Image
                   src="/images/profile/Maria.webp"
