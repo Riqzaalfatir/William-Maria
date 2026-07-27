@@ -374,7 +374,7 @@ const Quote = () => {
   },  [index, slides.length]); 
 
   return (
-    <section>
+    <section style={{ overflowAnchor: "none" }}>
       <div className="relative w-full">
         <ResponsivePicture
           mobileSrc="/images/quote/Bg-Quotee.webp"
