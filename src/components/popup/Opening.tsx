@@ -83,7 +83,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 className="w-[181px] h-[76px] md:w-[281px] md:h-[118px] pt-[4px] md:mt-[9px]"
                 priority
               />
-              <p className="text-[12px] md:text-[18px] text-white font-averne pt-[10px] md:pt-[11px] tracking-[2%]">
+              <p className="text-[12px] md:text-[18px] text-white font-averne pt-[10px] md:pt-[11px] tracking-[2%] [-webkit-text-stroke:0.2px_#FFFFFF">
                 SATURDAY, 19 SEPTEMBER 2026
               </p>
               <p className="text-[12px] md:text-[18px] text-white font-athelas font-bold italic mt-[36px] md:pt-[14px] tracking-[2%]">

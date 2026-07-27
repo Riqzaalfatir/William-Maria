@@ -24,11 +24,16 @@ const Wishes = () => {
   const [selectedMessage, setSelectedMessage] = useState<PesanItem | null>(
     null,
   );
-  const [pesanList, setPesanList] = useState<PesanItem[]>(() => {
-    if (typeof window === "undefined") return dummyPesan;
+  const [pesanList, setPesanList] = useState<PesanItem[]>(dummyPesan);
+
+  useEffect(() => {
     const saved = localStorage.getItem("pesan");
-    return saved ? JSON.parse(saved) : dummyPesan;
-  });
+    if (saved) {
+      setPesanList(JSON.parse(saved));
+    }
+  }, []);
+
+ 
   const [modalType, setModalType] = useState<ModalType>(null);
 
   const handleSubmit = (): void => {
@@ -72,7 +77,6 @@ const Wishes = () => {
 
         <div className="w-full max-w-[72.82vw] lg:max-w-[368px] mx-auto mt-[7.5vw] lg:mt-[28px]">
           <div className="flex flex-col gap-[20px]">
-
             {/* INPUT NAMA */}
             <motion.div
               variants={fadeUp}
@@ -145,7 +149,6 @@ const Wishes = () => {
                   <div className="px-[3.2vw] lg:px-[26px]">
                     {pesanList.map((item, index, array) => (
                       <div key={item.id}>
-
                         {/* LIST NAMA PENGIRIM PESAN */}
                         <p className="text-white font-athelas text-[3.08vw] mb-[2.56vw] lg:text-[14.5px] lg:mb-[9px] font-bold">
                           {item.nama}
@@ -177,8 +180,7 @@ const Wishes = () => {
                         .slice(0, 2);
 
                       return (
-
-                      // KETIKA DI VIEW ALL MESSAGE MUNCUL CARD CARD PESAN
+                        // KETIKA DI VIEW ALL MESSAGE MUNCUL CARD CARD PESAN
                         <div
                           key={item.id}
                           onClick={() => setSelectedMessage(item)}
@@ -255,7 +257,6 @@ const Wishes = () => {
           </div>
         </div>
         {showPopup && (
-
           // CARD MUNCUL KETIKA USER TELAH MENGIRIM NAMA DAN PESAN
           <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-[4px] px-[24px]">
             <div className="relative overflow-hidden rounded-[28px] border border-[#51483F]/20 bg-[#F9FBFA] shadow-lg w-full max-w-[84.62vw] lg:max-w-[420px]">
