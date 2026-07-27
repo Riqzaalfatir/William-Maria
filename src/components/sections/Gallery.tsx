@@ -16,7 +16,7 @@ const galleryImages = [
   { mobile: "/images/gallery/Pengantin4.webp", desktop: "/images/gallery/PengantinD.webp" },
 ];
 
-const AUTO_SLIDE_INTERVAL = 6000; // ms
+const AUTO_SLIDE_INTERVAL = 4000; // ms
 
 const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);

@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { popIn } from "@/lib/animation";
 import ResponsivePicture from "@/hooks/ResponsivePicture";
 
 const Hero = () => {
@@ -16,12 +19,25 @@ const Hero = () => {
         />
 
         <div className="absolute inset-0 z-10 flex flex-col items-center text-center pt-[20.77vw] lg:pt-0 lg:justify-center">
-          <p className="text-white font-athelas text-[10px] lg:text-[18px] uppercase">
+          <motion.p
+            variants={popIn}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-white font-athelas text-[10px] lg:text-[18px] uppercase"
+          >
             The Wedding of
-          </p>
+          </motion.p>
 
-          <div className="absolute top-[25.9vw] left-1/2 -translate-x-1/2 w-[255px] h-auto z-30 lg:static lg:translate-x-0 lg:w-[411px] lg:mt-[20px]">
-            <Image
+          <motion.div
+            className="absolute top-[25.9vw] left-1/2 -translate-x-1/2 w-[255px] h-auto z-30 lg:static lg:translate-x-0 lg:w-[411px] lg:mt-[20px]"
+          >
+            <motion.div 
+            variants={popIn}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}>
+              <Image
               src="/images/hero/Logo-WmD.png"
               alt="Provite Logo"
               width={450}
@@ -29,7 +45,8 @@ const Hero = () => {
               className="w-full"
               priority
             />
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

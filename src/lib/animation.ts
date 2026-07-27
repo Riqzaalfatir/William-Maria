@@ -41,6 +41,6 @@ export const popIn: Variants = {
   show: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 3.2, ease: "easeOut" }
+    transition: { duration: 4.5, ease: "easeOut" }
   }
 }
